@@ -35,6 +35,7 @@
 // Include CUDA utilities
 #include "utils/cuda_utils.cuh"
 
+
 int main() {
 
     // set up the device
@@ -58,7 +59,7 @@ int main() {
 
     const int NH = 12; // Number of heads
 
-    const float error_threshold = 0; // TODO: Set the error threshold for GPU vs CPU output comparisons
+    const float error_threshold = 0.01; // TODO: Set the error threshold for GPU vs CPU output comparisons
                                      // This is in unit of percentage difference in output values
                                      // Change this to a small value (like 0.01) for your own testing
 
@@ -109,10 +110,10 @@ int main() {
     encoder_forward_cpu(enc_out_cpu, enc_inp_cpu, wte_enc, wpe_enc, B, T, C);
 
     // TODO: Call your GPU function
-    // encoder_forward(enc_out_gpu_d, enc_inp_gpu_d, wte_enc_d, wpe_enc_d, B, T, C);
+    encoder_forward(enc_out_gpu_d, enc_inp_gpu_d, wte_enc_d, wpe_enc_d, B, T, C);
     
     // TODO: Copy output from your GPU function back to CPU
-    // cudaMemcpy(..., cudaMemcpyDeviceToHost);
+    cudaMemcpy(enc_out_gpu, enc_out_gpu_d, B * T * C * sizeof(float), cudaMemcpyDeviceToHost);
 
     int enc_totElements = B * T * C;
     int enc_error = 0;
@@ -178,10 +179,10 @@ int main() {
     layernorm_forward_cpu(lay_out_cpu, mean_ln, rstd_ln, lay_inp_cpu, weight_ln, bias_ln, B, T, C);
 
     // TODO: Call your GPU function
-    // layernorm_forward(lay_out_gpu_d, mean_ln_d, rstd_ln_d, lay_inp_gpu_d, weight_ln_d, bias_ln_d, B, T, C);
+    layernorm_forward(lay_out_gpu_d, mean_ln_d, rstd_ln_d, lay_inp_gpu_d, weight_ln_d, bias_ln_d, B, T, C);
 
     // TODO: Copy output from your GPU function back to CPU
-    // cudaMemcpy(..., cudaMemcpyDeviceToHost);
+    cudaMemcpy(lay_out_gpu, lay_out_gpu_d, B * T * C * sizeof(float), cudaMemcpyDeviceToHost);
 
     int lay_totElements = B * T * C;
     int lay_error = 0;
@@ -233,10 +234,10 @@ int main() {
     attention_forward_cpu(att_out_cpu, qkvr, att, att_inp_cpu, B, T, C, NH);
     
     // TODO: Call your GPU function
-    // attention_forward(att_out_gpu_d, qkvr_d, att_d, att_inp_gpu_d, B, T, C, NH);
+    attention_forward(att_out_gpu_d, qkvr_d, att_d, att_inp_gpu_d, B, T, C, NH);
 
     // TODO: Copy output from your GPU function back to CPU
-    // cudaMemcpy(..., cudaMemcpyDeviceToHost);
+    cudaMemcpy(att_out_gpu, att_out_gpu_d, B * T * C * sizeof(float), cudaMemcpyDeviceToHost);
 
     int att_totElements = B * T * C;
     int att_diff = 0;
@@ -254,6 +255,100 @@ int main() {
         printf("++++++++ Try testing each attention component separately for easier debugging ++++++++\n");
     } else {
         printf("--------------------attention_forward test passed!--------------------\n");
+    }
+
+    /*------------------------ permute_forward test ------------------------*/
+
+    float *perm_inp_cpu = (float*)malloc(inp_size * sizeof(float));
+    float *perm_q_cpu = (float*)malloc(B * T * C * sizeof(float));
+    float *perm_k_cpu = (float*)malloc(B * T * C * sizeof(float));
+    float *perm_v_cpu = (float*)malloc(B * T * C * sizeof(float));
+    float *perm_q_gpu = (float*)malloc(B * T * C * sizeof(float));
+    float *perm_k_gpu = (float*)malloc(B * T * C * sizeof(float));
+    float *perm_v_gpu = (float*)malloc(B * T * C * sizeof(float));
+    float *perm_q_d, *perm_k_d, *perm_v_d, *perm_inp_gpu_d;
+    cudaMalloc(&perm_q_d, B * T * C * sizeof(float));
+    cudaMalloc(&perm_k_d, B * T * C * sizeof(float));
+    cudaMalloc(&perm_v_d, B * T * C * sizeof(float));
+    cudaMalloc(&perm_inp_gpu_d, inp_size * sizeof(float));
+    for (int i = 0; i < inp_size; ++i) {
+        perm_inp_cpu[i] = (float)rand() / RAND_MAX;
+    }
+    cudaMemcpy(perm_inp_gpu_d, perm_inp_cpu, inp_size * sizeof(float), cudaMemcpyHostToDevice);
+    
+    permute_kernel_cpu(perm_q_cpu, perm_k_cpu, perm_v_cpu, perm_inp_cpu,B, T, NH, C / NH);
+
+    const unsigned int numThreadsPerBlock = 256;
+    const unsigned int Permute_numBlocks = (B * T * NH * HS + numThreadsPerBlock - 1) / numThreadsPerBlock;
+    permute_kernel<<<Permute_numBlocks, numThreadsPerBlock>>>(perm_q_d, perm_k_d, perm_v_d, perm_inp_gpu_d, B, T, NH, C / NH);
+
+    cudaMemcpy(perm_q_gpu, perm_q_d, B * T * C * sizeof(float), cudaMemcpyDeviceToHost);
+    cudaMemcpy(perm_k_gpu, perm_k_d, B * T * C * sizeof(float), cudaMemcpyDeviceToHost);
+    cudaMemcpy(perm_v_gpu, perm_v_d, B * T * C * sizeof(float), cudaMemcpyDeviceToHost);
+
+    int perm_totElements = B * T * C;
+    int perm_diff = 0;
+    for (int i = 0; i < perm_totElements; i++) {
+        if (fabs(perm_k_cpu[i] - perm_k_gpu[i])/(perm_k_cpu[i] + ep) > error_threshold) {
+            perm_diff ++;
+        }
+    }
+
+    for (int i = 0; i < perm_totElements; i++) {
+        if (fabs(perm_q_cpu[i] - perm_q_gpu[i])/(perm_q_cpu[i] + ep) > error_threshold) {
+            perm_diff ++;
+        }
+    }
+
+    for (int i = 0; i < perm_totElements; i++) {
+        if (fabs(perm_v_cpu[i] - perm_v_gpu[i])/(perm_v_cpu[i] + ep) > error_threshold) {
+            perm_diff ++;
+        }
+    }
+
+    if (perm_diff > 0) {
+        printf("+++++++++++++++ permute_kernel test failed with %d differing values +++++++++++++++\n", att_diff);
+        printf("+++++++++++++++   Check your implementation or error_threshold value   +++++++++++++++\n");
+    } else {
+        printf("--------------------permute_kernel test passed!--------------------\n");
+    }
+
+
+    /*------------------------ unpermute_forward test ------------------------*/
+
+    int unperm_inp_size = B * T * C;
+    float* unperm_inp_cpu = (float*) malloc(unperm_inp_size * sizeof(float));
+    float* unperm_out_cpu = (float*) malloc(unperm_inp_size * sizeof(float));
+    float* unperm_out_gpu = (float*) malloc(unperm_inp_size * sizeof(float));
+    float *unperm_inp_gpu_d, *unperm_out_gpu_d;
+
+    cudaMalloc(&unperm_inp_gpu_d, unperm_inp_size * sizeof(float));
+    cudaMalloc(&unperm_out_gpu_d, unperm_inp_size * sizeof(float));
+
+    for (int i = 0; i < unperm_inp_size; ++i) {
+        unperm_inp_cpu[i] = (float)rand() / RAND_MAX;
+    }
+    cudaMemcpy(unperm_inp_gpu_d, unperm_inp_cpu, unperm_inp_size * sizeof(float), cudaMemcpyHostToDevice);
+
+    unpermute_kernel_cpu(unperm_inp_cpu, unperm_out_cpu, B, T, NH, C / NH);
+
+    const unsigned int Unpermute_numBlocks = (B * T * C + numThreadsPerBlock - 1) / numThreadsPerBlock;
+    unpermute_kernel<<<Unpermute_numBlocks, numThreadsPerBlock>>>(unperm_inp_gpu_d, unperm_out_gpu_d, B, T, NH, C / NH);
+
+    cudaMemcpy(unperm_out_gpu, unperm_out_gpu_d, unperm_inp_size * sizeof(float), cudaMemcpyDeviceToHost);
+
+    int unperm_diff = 0;
+    for (int i = 0; i < unperm_inp_size; i++) {
+        if (fabs(unperm_out_cpu[i] - unperm_out_gpu[i])/(unperm_out_cpu[i] + ep) > error_threshold) {
+            unperm_diff ++;
+        }
+    }
+
+    if (unperm_diff > 0) {
+        printf("+++++++++++++++ unpermute_kernel test failed with %d differing values +++++++++++++++\n", att_diff);
+        printf("+++++++++++++++   Check your implementation or error_threshold value   +++++++++++++++\n");
+    } else {
+        printf("-------------------- unpermute_kernel test passed!--------------------\n");
     }
 
     /*------------------------ residual_forward test ------------------------*/
@@ -284,10 +379,10 @@ int main() {
     residual_forward_cpu(res_out_cpu, res_inp1_cpu, res_inp2_cpu, B * T * C);
 
     // TODO: Call your GPU function
-    // residual_forward(res_out_gpu_d, res_inp1_gpu_d, res_inp2_gpu_d, B * T * C);
+    residual_forward(res_out_gpu_d, res_inp1_gpu_d, res_inp2_gpu_d, B * T * C);
 
     // TODO: Copy output from your GPU function back to CPU
-    // cudaMemcpy(..., cudaMemcpyDeviceToHost);
+    cudaMemcpy(res_out_gpu, res_out_gpu_d, B * T * C * sizeof(float), cudaMemcpyDeviceToHost);
 
     int res_totElements = B * T * C;
     int res_diff = 0;
@@ -329,10 +424,10 @@ int main() {
     gelu_forward_cpu(gelu_out_cpu, gelu_inp_cpu, B * T * C);
 
     // TODO: Call your GPU function
-    // gelu_forward(gelu_out_gpu_d, gelu_inp_gpu_d, B * T * C);
+    gelu_forward(gelu_out_gpu_d, gelu_inp_gpu_d, B * T * C);
 
     // TODO: Copy output from your GPU function back to CPU
-    // cudaMemcpy(..., cudaMemcpyDeviceToHost);
+    cudaMemcpy(gelu_out_gpu, gelu_out_gpu_d, B * T * C * sizeof(float), cudaMemcpyDeviceToHost);
 
     int gelu_totElements = B * T * C;
     int gelu_diff = 0;
@@ -386,10 +481,10 @@ int main() {
     matmul_forward_cpu(mat_out_cpu, mat_inp_cpu, matmul_weight, matmul_bias, B, T, C, OC);
 
     // TODO: Call your GPU function
-    // matmul_forward(mat_out_gpu_d, mat_inp_gpu_d, matmul_weight_d, matmul_bias_d, B, T, C, OC);
+    matmul_forward(mat_out_gpu_d, mat_inp_gpu_d, matmul_weight_d, matmul_bias_d, B, T, C, OC);
 
     // TODO: Copy output from your GPU function back to CPU
-    // cudaMemcpy(..., cudaMemcpyDeviceToHost);
+    cudaMemcpy(mat_out_gpu, mat_out_gpu_d, B * T * 4 * C * sizeof(float), cudaMemcpyDeviceToHost);
 
     int mat_totElements = B * T * 4 * C;
     int mat_diff = 0;
@@ -452,12 +547,12 @@ int main() {
     cudaFree(unperm_inp_gpu_d);
     cudaFree(unperm_out_gpu_d);
 
-    free(softmax_inp_cpu);
-    free(softmax_inp_gpu);
-    free(softmax_out_cpu);
-    free(softmax_out_gpu);
-    cudaFree(softmax_inp_gpu_d);
-    cudaFree(softmax_out_gpu_d);
+    //free(softmax_inp_cpu);
+    //free(softmax_inp_gpu);
+    //free(softmax_out_cpu);
+    //free(softmax_out_gpu);
+    //cudaFree(softmax_inp_gpu_d);
+    //cudaFree(softmax_out_gpu_d);
 
     free(att_inp_cpu);
     free(att_out_cpu);
