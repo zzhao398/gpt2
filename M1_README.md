@@ -120,7 +120,7 @@ The grade breakdown for the coding portion of this milestone is as follows:
 | Residual                      | 1%     |
 | GELU                          | 1%     |
 
-*Total: 12% of project grade*
+*Total: 10% of project grade*
 
 ## Profiling and Performance Analysis   
 

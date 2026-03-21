@@ -30,7 +30,7 @@ In this project, you and your teammates will work, present, and be graded as a t
 
 ## Project Details
 
-This project is designed to be a team-based, multi-milestone project spanning the remainder of the semester. You need to form a team of 3-4 students (enrolled in the course) to work on this project. Each team will be assigned a course staff member as their mentor/grader for the project. We recommend having a team of 4 students if possible, as this project is quite large in scope, and the workload for each student is significant. Teams with fewer than 3 or more than 5 students will not be allowed. We recommend you use Campuswire or [Discord](https://discord.gg/X2GnMTXHEW) to find a team, however you can also sign up through the form on Campuswire without a team and we will attempt to match you.
+This project is designed to be a team-based, multi-milestone project spanning the remainder of the semester. You need to form a team of 3-4 students (enrolled in the course) to work on this project. Each team will be assigned a course staff member as their mentor/grader for the project. We recommend having a team of 4 students if possible, as this project is quite large in scope, and the workload for each student is significant. Teams with fewer than 3 or more than 4 students will not be allowed. We recommend you use Campuswire or [Discord](https://discord.gg/X2GnMTXHEW) to find a team, however you can also sign up through the form on Campuswire without a team and we will attempt to match you.
 
 In this Project, you and your team will implement the entire forward pass (inference) of GPT-2 using CUDA, perform various optimizations, and thoroughly analyze the performance of your implementation using Nvidia profiling tools. Inference in this case means we will provide you a pre-trained model of GPT-2, and you implementation must solely generate new responses. In the last milestone, you will also have the chance to explore a few additional optimizations of your choice and further improve the performance of your implementation. Throughout the project, your team's deliverables may include code submissions, code development logs/notes, written reports, milestone demo meetings, and a final presentation.
 
@@ -155,10 +155,10 @@ All demos are in-person in **NCSA Room 2000**. Please show up on time for the de
 1. Milestone 1 ( 15% )
    - Baseline Implementation Correctness ( 10% )
    - M1 Demo ( 5% )
-2. Milestone 2 ( XX% )
-   - M2 Required Optimizations Correctness  
-   - Profiling Report and Optimization Proposal
-   - M2 Demo 
+2. Milestone 2 ( 30% )
+   - M2 Required Optimizations Correctness ( 18% )
+   - Profiling Report and Optimization Proposal ( 7% )
+   - M2 Demo ( 5% )
 3. Milestone 3 ( XX% )
    - M3 Required Optimizations Correctness 
    - Proposed Optimizations Code Correctness 
