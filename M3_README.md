@@ -64,10 +64,12 @@ You may pick any combination of the following, so long as the weights add up to 
 | op_12        | Shared Memory Padding                        | 3%     |
 | op_13        | Host Allocation Data Alignment               | 2%     |
 | op_14        | Basic CUTLASS Device GEMM                    | 3%     |
-| op_15        | Advanced CUTLASS with CuTe                   | 5%     |
+| op_15        | Advanced Tensor Core Math (CuTe or Raw PTX)  | 5%     |
 | op_16        | Advanced CUTLASS with Fused Epilogues        | 4%     |
+| op_17        | Asynchronous Memory Pipelines (`cp.async`)   | 4%     |
+| op_18        | Thread Block Rasterization / Scheduling      | 2%     |
 
-**CUTLASS Mutually Exclusive Rule**: You may only choose **ONE** of the CUTLASS optimizations (`op_14`, `op_15`, or `op_16`) to implement for credit. You cannot stack these for combined points. Also, you may not use CUTLASS or any other NVIDIA libraries to implement the other optimizations for you.
+**CUTLASS Mutually Exclusive Rule**: You may only choose **ONE** of the CUTLASS/Tensor Core optimizations (`op_14`, `op_15`, or `op_16`) to implement for credit. You cannot stack these for combined points. Also, you may not use CUTLASS or any other NVIDIA libraries to implement the other optimizations for you.
 
 **Important**: Please see the additional details and hints provided at the end of this document before beginning your implementations.
 
@@ -151,7 +153,7 @@ For example, if your team chose to complete Configuration Sweeping (`op_7`), Con
   ├── kernels_req_4
   │   └── attention.cuh  [with Flash Attention]
   ├── kernels_req_5
-  │   └── attention.cuh  [with Local/Windowed Attention]
+  │   └── local_attention.cuh  [with Local/Windowed Attention]
   ├── kernels_req_6
   │   └── ...            [with KV-Caching]
   ├── kernels_op_7
@@ -279,17 +281,20 @@ To earn credit, you cannot simply copy-paste a default template. You must proper
 
 Check out the [CUTLASS Documentation Hub](https://docs.nvidia.com/cutlass/4.4.2/overview.html) and flip through the version of CUTLASS and different optimizations that you want to explore here!
 
-#### op_15: Custom Kernels with CUTLASS CuTe
+#### op_15: Advanced Tensor Core Math (CuTe or Raw PTX)
 
-*(Note: You may only select one CUTLASS optimization to implement for credit)*.
+*(Note: You may only select one CUTLASS/Tensor Core optimization to implement for credit. If you choose the raw PTX route, this rule still applies to prevent combining it with CUTLASS templates).*
 
 CUTLASS 3.x introduced **CuTe**, a powerful C++ template library for defining and manipulating hierarchical layouts of threads and data. While basic CUTLASS relies on pre-built `cutlass::gemm::device` templates, this optimization requires you to drop down a level of abstraction. 
 
-For this optimization, you will build a custom kernel utilizing CuTe's `Tensor` and `Layout` objects. You must explicitly define how your memory tiles map to the threads, and orchestrate the MMA (Matrix Multiply-Accumulate) atoms manually. 
+For this optimization, you will bypass the standard `wmma` API to interact more directly with the hardware Tensor Cores. You may choose one of two paths:
+1. **CUTLASS CuTe:** Utilize CuTe's `Tensor` and `Layout` objects to explicitly define how memory tiles map to threads and orchestrate the MMA atoms without writing assembly.
+
+2. **Raw PTX:** Use inline PTX instructions (specifically `ldmatrix` and `mma.sync`) to load data directly into the exact register layouts expected by the Tensor Cores, reducing Load/Store Unit (LSU) pressure and enabling shared memory swizzling.
 
 A good resource to begin learning CuTe may be the [CuTe Quick Start Guide](https://docs.nvidia.com/cutlass/latest/media/docs/cpp/cute/00_quickstart.html).
 
-To earn credit, your final report must include a detailed breakdown of your custom CuTe layouts, an explanation of how your thread-to-data mapping works, and why this layout is efficient for the A40 architecture. 
+To earn credit, your final report must include a detailed breakdown of your custom CuTe layouts OR your PTX instruction pipeline, explaining how your thread-to-data mapping works and why this approach is efficient for the A40 architecture.
 
 #### op_16: CUTLASS Fused Epilogue (Matmul + Bias + GeLU)
 
@@ -302,3 +307,15 @@ For this optimization, you will configure a CUTLASS GEMM pipeline to include a *
 You may either choose to use [GeLU Linear Combination](https://github.com/NVIDIA/cutlass/blob/main/include/cutlass/epilogue/thread/linear_combination_gelu.h) from Cutlass 2.x or [Epilogue Visitor Trees](https://developer.nvidia.com/blog/cutlass-3-x-orthogonal-reusable-and-composable-abstractions-for-gemm-kernel-design/) from Cutlass 3.x.
 
 To earn credit, your final report must include profiling data that explicitly demonstrates the elimination of the standalone GeLU kernel launch and the corresponding reduction in global memory traffic (DRAM read/writes) compared to your un-fused baseline implementation.
+
+#### op_17: Asynchronous Memory Pipelines (`cp.async`)
+
+In a standard kernel, loading from global to shared memory follows a strict path: Global -> Registers -> Shared. This consumes valuable register space and compute cycles. Ampere GPUs (like our A40s) introduced hardware support for asynchronous memory copies that bypass the register file entirely.
+
+For this optimization, utilize `cuda::pipeline` or raw `cp.async` PTX instructions to copy memory tiles directly from global DRAM into shared memory. By combining this with software pipelining, your Streaming Multiprocessors can perform math on one tile while asynchronously fetching the next tile in the background. Your report must demonstrate how this reduces register pressure and successfully overlaps memory fetches with computation.
+
+#### op_18: Thread Block Rasterization (L2 Cache)
+
+By default, the GPU schedules thread blocks linearly (row by row). If the matrix is large, by the time the GPU wraps around to start computing the next row of output tiles, the shared input data from the previous row has already been evicted from the L2 cache. 
+
+For this optimization, you will remap the `blockIdx` variables using a custom tiling pattern (e.g., Z-curve, Morton ordering, or spatial clustering) to force the hardware to execute spatially adjacent output tiles simultaneously. Because these adjacent blocks share the same input data, executing them concurrently drastically increases L2 cache reuse. You must prove via Nsight Compute metrics that your reordering improves L2 cache hit rates and reduces global memory traffic.
