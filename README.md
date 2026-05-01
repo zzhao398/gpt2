@@ -32,7 +32,7 @@ In this project, you and your teammates will work, present, and be graded as a t
 
 This project is designed to be a team-based, multi-milestone project spanning the remainder of the semester. You need to form a team of 3-4 students (enrolled in the course) to work on this project. Each team will be assigned a course staff member as their mentor/grader for the project. We recommend having a team of 4 students if possible, as this project is quite large in scope, and the workload for each student is significant. Teams with fewer than 3 or more than 4 students will not be allowed. We recommend you use Campuswire or [Discord](https://discord.gg/X2GnMTXHEW) to find a team, however you can also sign up through the form on Campuswire without a team and we will attempt to match you.
 
-In this Project, you and your team will implement the entire forward pass (inference) of GPT-2 using CUDA, perform various optimizations, and thoroughly analyze the performance of your implementation using Nvidia profiling tools. Inference in this case means we will provide you a pre-trained model of GPT-2, and you implementation must solely generate new responses. In the last milestone, you will also have the chance to explore a few additional optimizations of your choice and further improve the performance of your implementation. Throughout the project, your team's deliverables may include code submissions, code development logs/notes, written reports, milestone demo meetings, and a final presentation.
+In this Project, you and your team will implement the entire forward pass (inference) of GPT-2 using CUDA, perform various optimizations, and thoroughly analyze the performance of your implementation using Nvidia profiling tools. Inference in this case means we will provide you a pre-trained model of GPT-2, and you implementation must solely generate new responses. In the last milestone, you will also have the chance to explore a few additional optimizations of your choice and further improve the performance of your implementation. 
 
 **Note**: The Grace Period Policy for assignment submissions applies to the GPT Final Project as well.
 
@@ -146,9 +146,9 @@ Demos will always take place on the Monday after each milestone deadline. Each t
 - Milestone 2 Demo: April 13th
 - Milestone 3 Demo: May 4th
 
-All demos are in-person in **NCSA Room 2000**. Please show up on time for the demo slot you signed up for and do not congregate and/or make loud conversations outside the room as there are NCSA staff offices around. 
+All demos are in-person at the **NCSA**. Please show up on time for the demo slot you signed up for and do not congregate and/or make loud conversations outside the room as there are NCSA staff offices around. 
 
-*Also make sure to arrive early for your first demo, you may find it difficult to locate Room 2000 if you're not already familiar with the NCSA building layout.*
+*Also make sure to arrive early for your first demo, you may find it difficult to locate the demo room if you're not already familiar with the NCSA building layout.*
 
 ## Grading Rubric
 
@@ -159,14 +159,15 @@ All demos are in-person in **NCSA Room 2000**. Please show up on time for the de
    - M2 Required Optimizations Correctness ( 18% )
    - Profiling Report and Optimization Proposal ( 7% )
    - M2 Demo ( 5% )
-3. Milestone 3 ( XX% )
-   - M3 Required Optimizations Correctness 
-   - Proposed Optimizations Code Correctness 
-   - Final Report 
-   - M3 Demo 
-4. Subjective Evaluation ( XX% )
-5. Extra Credit ( up to 5% )
-   - Course Staff Discretion
+3. Milestone 3 ( 50% )
+   - M3 Required Optimizations Correctness ( 20% )
+   - Additional Optimizations Code Correctness ( 10% )
+   - Final Report ( 15% )
+   - M3 Demo ( 5% )
+4. Subjective Evaluation ( 5% )
+5. Extra Credit ( capped up to 10% )
+   - Optimizations Beyond M3 Requirements ( see [M3_README.md](M3_README.md) )
+   - Competition Leaderboard Placement ( TBD )
 
 **Note on Code Deliverables:** You and your teammates are fully responsible for ensuring that your code is ready and submitted on time. This means that any last-minute bugs in code submitted to the main branch will be counted against your team's grade, with compilation errors resulting in a 0 for your whole team's code grade in that milestone.
 

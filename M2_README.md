@@ -23,7 +23,7 @@ For this milestone, you will need to:
 - Complete the below list of required optimizations.
 - Profile your M1 baseline kernel implementations as well as all M2 required kernel optimizations.
 - Present your profiling findings in the form of a report.
-- Analyze your results to motivate additional optimizations you plan to implement in the next milestone, and propose them in your report.
+- Analyze your results to motivate additional optimizations outside of the list currently supported for the next Milestone, and propose them in your report.
 
 ### Milestone 2 Required Optimizations:
 | Optimization | Description                                                        |
@@ -149,34 +149,41 @@ This report does not have a length requirement. A long report packed with differ
 
 ### Optimization Proposal
 The logical next step after profiling your code thinking critically and coming up with you own optimizations. Following your profiling sections in your report, you will need to write up an optimization proposal section detailing how you plan on further optimizing the existing GPU forward pass kernels.
+
+Note that Milestone 3 will comprise of a list of required optimizations, as well as a set of additional optimizations that you will select a subset of to implement for credit, based on what interests you. The tentative list of all Milestone 3 requirements is shown below.
  
-Your Proposal should contain around 2-4 additional optimizations you plan to implement in the next milestone. You may come up with your own ideas, analyze your profiling results, extend/expand an existing optimization (in a meaningful/nontrivial way), apply concepts from lecture, and/or search online for optimization ideas. Here are some ideas/options (*that aren't necessarily the easiest/best*): K-V Cache, Multi-GPU Support, NVIDIA CUTLASS, new algorithm to optimize a specific kernel, etc.
+Your proposal should contain around 2-4 additional optimizations outside of the list for Milestone 3 that you wish to add to the additional optimizations section. You may come up with your own ideas, analyze your profiling results, extend/expand an existing optimization (in a meaningful/nontrivial way), apply concepts from lecture, and/or search online for optimization ideas. Here are some ideas/options (*that aren't necessarily the easiest/best*): Multi-GPU Support, NVIDIA CUTLASS, a new algorithm to optimize a specific kernel, etc.
 
-Note that these optimizations may **not** already be one of the M3 optimizations that you can implement in the next milestone. The M3 optimizations are listed below for your reference.
+Note that these optimizations may **not** already be one of the M3 optimizations that you can implement in the next milestone, but if your optimization is proposed clearly, we will add to the following list and assign it a point value. The M3 optimizations are listed below for your reference.
 
-You should provide a detailed description of the proposed optimizations, how you plan to implement them, and why you think they will be beneficial. Grading of this proposal will be based on effort, detail, and feasibility of the proposed optimizations. Keep in mind that you will need to implement these optimizations in the next milestone and they will be graded. 
+You should provide a detailed description of the proposed optimizations, how you plan to implement them, and why you think they will be beneficial. Grading of this proposal will be based on effort, detail, and feasibility of the proposed optimizations. 
 
-#### Tentative Milestone 3 Optimizations (NOT for this milestone):
+If your proposal is approved, it will be added to the pool of eligible Additional Optimizations. While you are highly encouraged to implement your own proposed ideas in Milestone 3, you will have the flexibility to pivot and choose from the standard Additional Optimizations list below if needed.
+
+#### Tentative Milestone 3 Required Optimizations (NOT for this milestone, cannot be proposed):
 
 | Optimization | Description                                  |
 | ------------ | -----------                                  |
-| op_4         | Flash Attention                              |
-| op_5         | Configuration Sweep/Optimization             |
-| op_6         | Constant Memory                              |
-| op_7         | `__restrict__`                               |
-| op_8         | Local/Windowed Attention                     |
-| op_9         | Split-K                                      |
-| op_10        | Shared Memory Padding                        |
-| op_11        | Data Swizzling                               |
-| op_12        | KV-Caching                                   |
+| req_4         | Flash Attention                              |
+| req_5         | Local/Windowed Attention                     |
+| req_6         | KV-Caching                                   |
+
+#### Tentative Milestone 3 Additional Optimizations (NOT for this milestone, cannot be proposed):
+
+| Optimization | Description                                  |
+| ------------ | -----------                                  |
+| op_7         | Configuration Sweep/Optimization             |
+| op_8         | Constant Memory                              |
+| op_9         | `__restrict__`                               |
+| op_10        | Split-K                                      |
+| op_11        | Shared Memory Padding                        |
+| op_12        | Data Swizzling                               |
 | op_13        | Host Allocation Data Alignment               |
-
-
 
 ## Submission and Grading
 
 ### Non-Code Submission
-To submit your profiling report and optimization proposal, combine them as **1 PDF file** named `[team_name]_M2_Profiling_Report.pdf`, where `[team_name]` is your team's name and **submit to the Gradescope assignment**. Only one member from each team must submit, and ensure that the name of your team is somewhere on the first page. There is no strict format requirement for them as it will be manually graded, but make sure the file is typed (not hand-written) and correctly named.
+To submit your profiling report and optimization proposal, combine them as **1 PDF file** named `[team_name]_M2_Profiling_Report.pdf`, where `[team_name]` is your team's name and **submit to the Gradescope assignment**. Only one member from each team must submit, and ensure that the name of your team is somewhere on the first page. There is no strict format or page requirement for them as it will be manually graded, but make sure the file is typed (not hand-written) and correctly named.
 
 ### Code Submission
 
