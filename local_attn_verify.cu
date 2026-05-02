@@ -7,7 +7,7 @@
 #include "cpu_kernels/local_attention.cuh"
 
 //! TODO: Include your local attention kernel here!
-// #include "kernels/local_attention.cuh"
+#include "kernels/local_attention.cuh"
 
 #define cudaCheck(call) do { \
     cudaError_t err = call; \
@@ -144,6 +144,9 @@ int main() {
         char output_filepath[512];
         snprintf(input_filepath, sizeof(input_filepath), "/work/hdd/bche/Project_GPT/local_attn_examples/example_%i.tcin", example_idx);
         snprintf(output_filepath, sizeof(output_filepath), "/work/hdd/bche/Project_GPT/local_attn_examples/example_%i.tcout", example_idx);
+
+        //snprintf(input_filepath, sizeof(input_filepath), "/home/axx_0213/CS483_GPT/GPT_Supports/Project_GPT/local_attn_examples/example_%i.tcin", example_idx);
+        //snprintf(output_filepath, sizeof(output_filepath), "/home/axx_0213/CS483_GPT/GPT_Supports/Project_GPT/local_attn_examples/example_%i.tcout", example_idx);
         
         printf("\n Testing Example %d: \n", example_idx);
         
@@ -166,35 +169,42 @@ int main() {
         // calls the CPU implementation to compute windowed attention outputs
         local_attention_forward_cpu(att_out, qkvr_local, att_inp_cpu, batch_size, seq_length, num_heads, head_dim);    
         
-        //! TODO: uncomment the below line to see how to compare outputs of the provided CPU code with golden solution
-        // compare_arrays(att_out, expected_outputs, size, input_filepath);
+        compare_arrays(att_out, expected_outputs, size, "CPU Reference");
 
         free(att_inp_cpu);
         free(qkvr_local);
         free(att_out);
         
-        //! TODO: Modify the below code to test your GPU implementation!
-
         // --------------- Your GPU implementation test ---------------
-        
-        // int tensor_size = batch_size * seq_length * num_heads * head_dim;
+        int tensor_size = batch_size * seq_length * num_heads * head_dim;
 
-        // float *device_input = NULL;
-        // float *device_output = NULL;
-                
-        // //! TODO: Call your GPU implementation here (including permute and unpermute)
-        // local_attention_forward_gpu(...);
-        
-        // cudaCheck(cudaGetLastError());
-        
-        // // Copy results back to host for comparison
-        // float* host_outputs = (float*)calloc(tensor_size, sizeof(float));
-        // cudaCheck(cudaMemcpy(host_outputs, device_output, tensor_size * sizeof(float), 
-        //                     cudaMemcpyDeviceToHost));
-        
-        // compare_arrays(host_outputs, expected_outputs, tensor_size, input_filepath);
-        
-        // //! TODO: Free allocated memory in host and device
+        float *device_input = NULL;
+        float *device_qkvr = NULL;
+        float *device_output = NULL;
+        float *host_outputs = (float*)calloc(tensor_size, sizeof(float));
+
+        cudaCheck(cudaMalloc(&device_input, tensor_size * 3 * sizeof(float)));
+        cudaCheck(cudaMalloc(&device_qkvr, tensor_size * 3 * sizeof(float)));
+        cudaCheck(cudaMalloc(&device_output, tensor_size * sizeof(float)));
+
+        cudaCheck(cudaMemcpy(device_input, input_data, tensor_size * 3 * sizeof(float), cudaMemcpyHostToDevice));
+
+        local_attention_forward_gpu(device_output, device_qkvr, device_input,
+                                     batch_size, seq_length, num_heads, head_dim);
+
+        cudaCheck(cudaGetLastError());
+        cudaCheck(cudaMemcpy(host_outputs, device_output, tensor_size * sizeof(float),
+                             cudaMemcpyDeviceToHost));
+
+        compare_arrays(host_outputs, expected_outputs, tensor_size, "GPU Local Attention");
+
+        free(host_outputs);
+        cudaCheck(cudaFree(device_input));
+        cudaCheck(cudaFree(device_qkvr));
+        cudaCheck(cudaFree(device_output));
+
+        free(input_data);
+        free(expected_outputs);
     }
     
     printf("\n================== End of Tests Reached ==================\n");
