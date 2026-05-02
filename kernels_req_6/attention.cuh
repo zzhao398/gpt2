@@ -186,8 +186,8 @@ void attention_forward(float* out, float* qkvr, float* att, float* inp, int B, i
         // Option 1: Allocate a very big kv cache to store all the tokens
         // Option 2: Dynamically resize the kv cache repeatedly for each new token
 
-        // 12 layers, each with separate K and V, batch size B, 2048 tokens, C channels per token
-        cudaCheck(cudaMalloc((void**)&g_kv_cache, 12 * 2 * B * 2048 * C * sizeof(float)));
+        // 12 layers, each with separate K and V, batch size B, 1024 tokens, C channels per token
+        cudaCheck(cudaMalloc((void**)&g_kv_cache, 12 * 2 * B * 1024 * C * sizeof(float)));
     }
 
     if (g_is_prefill) {
