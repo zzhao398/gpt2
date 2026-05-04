@@ -9,6 +9,8 @@
 //! TODO: Include your local attention kernel here!
 #include "kernels/local_attention.cuh"
 
+#include "kernels/attention.cuh"
+
 #define cudaCheck(call) do { \
     cudaError_t err = call; \
     if (err != cudaSuccess) { \
@@ -155,6 +157,8 @@ int main() {
         // read golden solution values
         read_output_from_file(output_filepath, &batch_size, &seq_length, &num_heads, &head_dim, &expected_outputs);
 
+        printf("Batch Size: %d, Sequence Length: %d, Num Heads: %d, Head Dim: %d\n", batch_size, seq_length, num_heads, head_dim);
+
         // --------------- CPU reference implementation test example ---------------
         
         int size = batch_size * seq_length * num_heads * head_dim;
@@ -202,6 +206,40 @@ int main() {
         cudaCheck(cudaFree(device_input));
         cudaCheck(cudaFree(device_qkvr));
         cudaCheck(cudaFree(device_output));
+
+        // --------------- Standard GPU attention baseline ---------------
+
+
+        // not going to test correctness, but compare performance when using ncu
+        tensor_size = batch_size * seq_length * num_heads * head_dim;
+
+        device_input = NULL;
+        device_qkvr = NULL;
+        device_output = NULL;
+        host_outputs = (float*)calloc(tensor_size, sizeof(float));
+        float *device_att = NULL;
+
+        cudaCheck(cudaMalloc(&device_input, tensor_size * 30 * sizeof(float)));
+        cudaCheck(cudaMalloc(&device_qkvr, tensor_size * 3 * sizeof(float)));
+        cudaCheck(cudaMalloc(&device_output, tensor_size * sizeof(float)));
+        cudaCheck(cudaMalloc(&device_att, batch_size * num_heads * seq_length * seq_length * sizeof(float)));
+
+        cudaCheck(cudaMemcpy(device_input, input_data, tensor_size * 3 * sizeof(float), cudaMemcpyHostToDevice));
+
+        attention_forward(device_output, device_qkvr, device_att, device_input,
+                                     batch_size, seq_length, num_heads * head_dim, num_heads);
+
+        cudaCheck(cudaGetLastError());
+        cudaCheck(cudaMemcpy(host_outputs, device_output, tensor_size * sizeof(float),
+                             cudaMemcpyDeviceToHost));
+
+        // compare_arrays(host_outputs, expected_outputs, tensor_size, "GPU standard Attention");
+
+        free(host_outputs);
+        cudaCheck(cudaFree(device_input));
+        cudaCheck(cudaFree(device_qkvr));
+        cudaCheck(cudaFree(device_output));
+        cudaCheck(cudaFree(device_att));
 
         free(input_data);
         free(expected_outputs);
