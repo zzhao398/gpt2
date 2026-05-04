@@ -39,50 +39,69 @@ __global__ void unpermute_kernel_local(const float* inp, float* out, int B, int 
 
 __global__ void local_attention_kernel(float* inp, const float* q, const float* k, const float* v,
                                        int B, int T, int NH, int HS, float scale) {
-    int index = blockDim.x * blockIdx.x + threadIdx.x;
-    if (index >= B * NH * T) return;
+    int bnhq = blockIdx.x;
+    if (bnhq >= B * NH * T || threadIdx.x >= WINDOW_SIZE + 1) return;
 
-    int q_t = index % T;
-    int nh = (index / T) % NH;
-    int b = index / (T * NH);
+    // local_k = 128 => k_t = q_t 
+    int local_k = threadIdx.x;
+    int q_t = bnhq % T;
+    int nh = (bnhq / T) % NH;
+    int b = bnhq / (T * NH);
+
+    __shared__ float max_scores[BLOCK_SIZE];
+    __shared__ float sum_weights[BLOCK_SIZE];
+
+    max_scores[threadIdx.x] = -FLT_MAX;
+    sum_weights[threadIdx.x] = 0.0f;
+    __syncthreads();
 
     const int base = b * NH * T * HS + nh * T * HS;
     const int q_offset = base + q_t * HS;
-    const int k_start = (q_t > WINDOW_SIZE) ? (q_t - WINDOW_SIZE) : 0;
+    const int k_start = (q_t >= WINDOW_SIZE) ? 0 : (WINDOW_SIZE - q_t);
 
-    float maxval = -FLT_MAX;
-    for (int k_t = k_start; k_t <= q_t; ++k_t) {
-        float score = 0.0f;
-        const int k_offset = base + k_t * HS;
+    float score = 0.0f;
+    if (local_k >= k_start) {
+        
+        const int k_offset = base + (q_t - WINDOW_SIZE + local_k) * HS;
         for (int hs = 0; hs < HS; ++hs) {
             score += q[q_offset + hs] * k[k_offset + hs];
         }
-        maxval = fmaxf(maxval, score);
+        max_scores[local_k] = score;
     }
 
+    __syncthreads();
+
+    float maxval = -FLT_MAX;
+    for (int k_t = k_start; k_t <= WINDOW_SIZE; ++k_t) {
+        maxval = fmaxf(maxval, max_scores[k_t]);
+    }
+
+    if (threadIdx.x == 0) {
+        for (int hs = 0; hs < HS; ++hs) {
+            inp[q_offset + hs] = 0.0f;
+        }
+    }
     float sumval = 0.0f;
-    for (int hs = 0; hs < HS; ++hs) {
-        inp[q_offset + hs] = 0.0f;
-    }
+    __syncthreads();
 
-    // we compute score twice since thread level don't have enough resources to stor a weight array of 128 elements
-    for (int k_t = k_start; k_t <= q_t; ++k_t) {
-        float score = 0.0f;
-        const int kv_offset = base + k_t * HS;
-        for (int hs = 0; hs < HS; ++hs) {
-            score += q[q_offset + hs] * k[kv_offset + hs];
-        }
-
+    if (local_k >= k_start) {
         float weight = expf(scale * (score - maxval));
-        sumval += weight;
+        sum_weights[local_k] = weight;
         for (int hs = 0; hs < HS; ++hs) {
-            inp[q_offset + hs] += weight * v[kv_offset + hs];
+            atomicAdd(&inp[q_offset + hs], weight * v[base + (q_t - WINDOW_SIZE + local_k) * HS + hs]);
         }
     }
+    __syncthreads();
 
-    float inv_sum = 1.0f / sumval;
-    for (int hs = 0; hs < HS; ++hs) {
-        inp[q_offset + hs] *= inv_sum;
+    for (int k_t = k_start; k_t <= local_k; ++k_t) {
+        sumval += sum_weights[k_t];
+    }
+
+    if (local_k == 128) {
+        float inv_sum = 1.0f / sumval;
+        for (int hs = 0; hs < HS; ++hs) {
+            inp[q_offset + hs] *= inv_sum;
+        }
     }
 }
 
@@ -92,13 +111,13 @@ void local_attention_forward_gpu(float* out, float* qkvr, float* inp, int B, int
     float* v = qkvr + 2 * B * T * NH * HS;
 
     const int qkv_elems = B * T * NH * HS;
-    const int out_elems = B * NH * T;
+    const int out_elems = B * NH * T ;
     const int num_blocks_qkv = (qkv_elems + BLOCK_SIZE - 1) / BLOCK_SIZE;
-    const int num_blocks_out = (out_elems + BLOCK_SIZE - 1) / BLOCK_SIZE;
+    const int num_blocks_out = out_elems;
     const float scale = 1.0f / sqrtf((float)HS);
 
     permute_kernel_local<<<num_blocks_qkv, BLOCK_SIZE>>>(q, k, v, inp, B, T, NH, HS);
-    local_attention_kernel<<<num_blocks_out, BLOCK_SIZE>>>(inp, q, k, v, B, T, NH, HS, scale);
+    local_attention_kernel<<<num_blocks_out, WINDOW_SIZE + 1>>>(inp, q, k, v, B, T, NH, HS, scale);
     unpermute_kernel_local<<<num_blocks_qkv, BLOCK_SIZE>>>(inp, out, B, T, NH, HS);
 }
 
