@@ -4,82 +4,69 @@
 #include <cuda_runtime.h>
 #include "../utils/cuda_utils.cuh"
 
-#define BM 64
-#define BN 64
-#define BK 8
-#define TM 8
-#define TN 8
+#define U 16
+#define BLOCK_SIZE 256
+#define TILE_WIDTH 16
 
-// out[B*T, OC] = inp[B*T, C] @ weight[OC, C]^T + bias[OC]
-__global__ void matmul_forward_kernel(float* out, const float* inp, const float* weight,
+__global__ void matmul_forward_kernel(float* out, const float* inp, const float* weight, 
                                       const float* bias, int B, int T, int C, int OC) {
-    int row_start = blockIdx.y * BM;
-    int col_start = blockIdx.x * BN;
-
-    int ty = threadIdx.y; // thread row
-    int tx = threadIdx.x; // thread col
-
-    __shared__ float smem_inp[BM][BK];
-    __shared__ float smem_w[BK][BN];
-
-    float reg_out[TM][TN] = {};
-    float reg_inp[TM];
-    float reg_w[TN];
-
-    int total_threads = (BM / TM) * (BN / TN); // 64
-    int tid = ty * (BN / TN) + tx;
-
-    for (int k = 0; k < C; k += BK) {
-        // inp tile: BM x BK
-        for (int i = tid; i < BM * BK; i += total_threads) {
-            int r = i / BK, c = i % BK;
-            int grow = row_start + r, gk = k + c;
-            smem_inp[r][c] = (grow < B * T && gk < C) ? inp[grow * C + gk] : 0.0f;
+    // Implement this
+    // Input (B,T,C) @ Weight (OC, C) + Bias is (OC) = Output (B,T,OC)
+    int bt = blockDim.x * blockIdx.x + threadIdx.x;
+    int oc_start = blockIdx.y * U;
+    // oc_offset and c_offset are used for weight_s memory mapping
+    // it has no actual meaning
+    int oc_offset = threadIdx.x % U;
+    int C_offset = threadIdx.x / U;
+    __shared__ float input_s[BLOCK_SIZE][TILE_WIDTH];
+    __shared__ float weight_s[TILE_WIDTH][U];
+    float sum[U];
+    for (int i = 0; i < U; i++) {
+        sum[i] = 0.0f;
+    }
+    for (int i = 0; i < (C - 1) / TILE_WIDTH + 1; i++) {
+        if (bt < B * T) {
+            for (int j = 0; j < TILE_WIDTH; j++) {
+                if (i * TILE_WIDTH + j < C)
+                    input_s[threadIdx.x][j] = inp[bt * C + i * TILE_WIDTH + j];
+                else
+                    input_s[threadIdx.x][j] = 0.0f;
+            }
+        } else {
+            for (int j = 0; j < TILE_WIDTH; j++) {
+                input_s[threadIdx.x][j] = 0.0f;
+            }
         }
-        // weight tile: BK x BN
-        for (int i = tid; i < BK * BN; i += total_threads) {
-            int r = i / BN, c = i % BN;
-            int gk = k + r, gcol = col_start + c;
-            smem_w[r][c] = (gk < C && gcol < OC) ? weight[gcol * C + gk] : 0.0f;
+        if (i * TILE_WIDTH + C_offset >= C || oc_offset + oc_start >= OC) {
+            weight_s[C_offset][oc_offset] = 0.0f;
+        } else {
+            weight_s[C_offset][oc_offset] = weight[(oc_offset + oc_start) * C + i * TILE_WIDTH + C_offset];
         }
         __syncthreads();
 
-        for (int bk = 0; bk < BK; bk++) {
-            for (int tm = 0; tm < TM; tm++)
-                reg_inp[tm] = smem_inp[ty * TM + tm][bk];
-            for (int tn = 0; tn < TN; tn++)
-                reg_w[tn] = smem_w[bk][tx * TN + tn];
-            for (int tm = 0; tm < TM; tm++)
-                for (int tn = 0; tn < TN; tn++)
-                    reg_out[tm][tn] += reg_inp[tm] * reg_w[tn];
+        for (int j = 0; j < U; j++) {
+            for (int k = 0; k < TILE_WIDTH; k++) {
+                sum[j] += input_s[threadIdx.x][k] * weight_s[k][j];
+            }
         }
         __syncthreads();
     }
-
-    for (int tm = 0; tm < TM; tm++) {
-        int grow = row_start + ty * TM + tm;
-        if (grow >= B * T) continue;
-        for (int tn = 0; tn < TN; tn++) {
-            int gcol = col_start + tx * TN + tn;
-            if (gcol >= OC) continue;
-            float val = reg_out[tm][tn];
-            if (bias) val += bias[gcol];
-            out[grow * OC + gcol] = val;
-        }
+    for (int i = 0; i < U; i++) {
+        if (bias && oc_start + i < OC)
+            sum[i] += bias[oc_start + i];
+        if (bt < B * T && oc_start + i < OC)
+            out[bt * OC + oc_start + i] = sum[i];
     }
 }
 
+// Launch kernel here
 void matmul_forward(float* out, const float* inp, const float* weight, const float* bias,
                     int B, int T, int C, int OC) {
-    dim3 grid((OC + BN - 1) / BN, (B * T + BM - 1) / BM);
-    dim3 block(BN / TN, BM / TM); // 64 threads
-    matmul_forward_kernel<<<grid, block>>>(out, inp, weight, bias, B, T, C, OC);
+    // Implement this
+    const unsigned int numThreadsPerBlock = BLOCK_SIZE;
+    dim3 numBlocks((B * T - 1) / numThreadsPerBlock + 1, (OC - 1) / U + 1);
+    matmul_forward_kernel<<<numBlocks, numThreadsPerBlock>>>(out, inp, weight, bias, B, T, C, OC);
+    
 }
-
-#undef BM
-#undef BN
-#undef BK
-#undef TM
-#undef TN
 
 #endif // __MATMUL_KERNEL_CUH__

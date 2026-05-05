@@ -5,33 +5,47 @@
 #include <cublas_v2.h>
 #include "../utils/cuda_utils.cuh"
 
-__global__ void add_bias_kernel(float* out, const float* bias, int BT, int OC) {
-    int idx = blockIdx.x * blockDim.x + threadIdx.x;
-    if (idx >= BT * OC) return;
-    out[idx] += bias[idx % OC];
+
+__global__ void bias_kernel(const float* bias, float* out, int B, int T, int OC) {
+    int index = blockDim.x * blockIdx.x + threadIdx.x;
+    if (index < B * T * OC) {
+        int oc = index % OC;
+        out[index] += bias[oc];
+    }
 }
 
-//   out^T (OC, B*T) = weight (OC, C) @ inp^T (C, B*T)
+
+// Launch kernel here
 void matmul_forward(float* out, const float* inp, const float* weight, const float* bias,
                     int B, int T, int C, int OC) {
-    int M = OC;
-    int N = B * T;
+    // Input is row-major (B * T, C), weight is row-major (OC, C),
+    // and cuBLAS expects column-major. We compute out^T = weight * inp^T.
+    int M = B * T;
     int K = C;
-    float alpha = 1.0f, beta = 0.0f;
+    int N = OC;
 
-    cublasCheck(cublasSgemm(cublas_handle,
-        CUBLAS_OP_T, CUBLAS_OP_N,
-        M, N, K,
-        &alpha,
-        weight, K,
-        inp,    K,
-        &beta,
-        out,    M));
+    const float alpha = 1.0f;
+    const float beta = 0.0f;
+    cublasHandle_t handle;
+    cublasCheck(cublasCreate(&handle));
+
+    cublasCheck(cublasSgemm(handle,
+                            CUBLAS_OP_T, CUBLAS_OP_N,
+                            N, M, K,
+                            &alpha,
+                            weight, K,
+                            inp, K,
+                            &beta,
+                            out, N));
 
     if (bias) {
-        int total = B * T * OC;
-        add_bias_kernel<<<(total + 255) / 256, 256>>>(out, bias, B * T, OC);
+        int numThreadsPerBlock = 256;
+        int numBlocks = (B * T * OC - 1) / numThreadsPerBlock + 1;
+        bias_kernel<<<numBlocks, numThreadsPerBlock>>>(bias, out, B, T, OC);
+        cudaCheck(cudaGetLastError());
     }
+    cublasCheck(cublasDestroy(handle));
+    
 }
 
 #endif // __MATMUL_KERNEL_CUH__
