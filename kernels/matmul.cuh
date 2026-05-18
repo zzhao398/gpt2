@@ -2,34 +2,40 @@
 #define __MATMUL_KERNEL_CUH__
 
 #include <cuda_runtime.h>
+#include <cublas_v2.h>
 #include "../utils/cuda_utils.cuh"
 
-__global__ void matmul_forward_kernel(float* out, const float* inp, const float* weight, 
-                                      const float* bias, int B, int T, int C, int OC) {
-    // Implement this
+// req_2: cuBLAS Sgemm, reuses the global cublas_handle from cuda_utils.cuh
+// to avoid per-call cublasCreate/Destroy overhead.
+
+__global__ void bias_kernel(const float* bias, float* out, int B, int T, int OC) {
     int index = blockDim.x * blockIdx.x + threadIdx.x;
     if (index < B * T * OC) {
         int oc = index % OC;
-        int t = (index / OC) % T;
-        int b = index / (OC * T);
-        float sum = 0.0f;
-        for (int i = 0; i < C; i++) {
-            sum += inp[b * T * C + t * C + i] * weight[oc * C + i];
-        }
-        if (bias)
-            sum += bias[oc];
-        out[index] = sum;
+        out[index] += bias[oc];
     }
 }
 
-// Launch kernel here
 void matmul_forward(float* out, const float* inp, const float* weight, const float* bias,
                     int B, int T, int C, int OC) {
-    // Implement this
-    const unsigned int numThreadsPerBlock = 256;
-    const unsigned int numBlocks = (B * T * OC + numThreadsPerBlock - 1) / numThreadsPerBlock;
-    matmul_forward_kernel<<<numBlocks, numThreadsPerBlock>>>(out, inp, weight, bias, B, T, C, OC);
-    
+    const float alpha = 1.0f;
+    const float beta  = 0.0f;
+
+    cublasCheck(cublasSgemm(cublas_handle,
+                            CUBLAS_OP_T, CUBLAS_OP_N,
+                            OC, B * T, C,
+                            &alpha,
+                            weight, C,
+                            inp,    C,
+                            &beta,
+                            out,    OC));
+
+    if (bias) {
+        const int numThreadsPerBlock = 256;
+        const int numBlocks = (B * T * OC - 1) / numThreadsPerBlock + 1;
+        bias_kernel<<<numBlocks, numThreadsPerBlock>>>(bias, out, B, T, OC);
+        cudaCheck(cudaGetLastError());
+    }
 }
 
 #endif // __MATMUL_KERNEL_CUH__

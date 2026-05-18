@@ -1,0 +1,161 @@
+#!/usr/bin/env python3
+# sweep_op7.py — 扫描新内核架构（U × TILE_WIDTH）的最优参数配置
+#
+# 新内核架构约束：
+#   BLOCK_SIZE = U × TILE_WIDTH（每个 block 的线程数，硬约束）
+#   smem = (BLOCK_SIZE × TILE_WIDTH + TILE_WIDTH × U) × 4 字节
+#
+# 搜索空间（7 个有效配置）：
+#   U=8  TW=8  BS=64   smem=2304 B
+#   U=8  TW=16 BS=128  smem=8704 B
+#   U=8  TW=32 BS=256  smem=33792 B
+#   U=16 TW=8  BS=128  smem=4608 B
+#   U=16 TW=16 BS=256  smem=17408 B  ← req_0 默认
+#   U=32 TW=8  BS=256  smem=9216 B
+#   U=32 TW=16 BS=512  smem=34816 B
+#
+# 运行方式：
+#   cd /path/to/repo && python kernels_op_7/sweep.py [--out results.csv] [--timeout 120]
+
+import argparse
+import csv
+import itertools
+import os
+import shutil
+import subprocess
+import time
+
+# 搜索的参数范围
+U_VALS          = [8, 16, 32]
+TILE_WIDTH_VALS = [8, 16, 32]
+
+SMEM_LIMIT   = 49152   # A40 每 block 最大 shared memory = 48 KB
+THREAD_LIMIT = 1024    # CUDA 每 block 最大线程数
+FLOAT_BYTES  = 4
+
+
+def is_valid(U, TILE_WIDTH):
+    """
+    检查 (U, TILE_WIDTH) 配置是否满足硬件约束。
+    BLOCK_SIZE = U × TILE_WIDTH（核心约束，必须恰好 cover smem 加载）。
+    """
+    BLOCK_SIZE = U * TILE_WIDTH
+    if BLOCK_SIZE > THREAD_LIMIT or BLOCK_SIZE < 32:
+        return False
+    # smem = input_s[BS][TW] + weight_s[TW][U]
+    smem = (BLOCK_SIZE * TILE_WIDTH + TILE_WIDTH * U) * FLOAT_BYTES
+    if smem > SMEM_LIMIT:
+        return False
+    return True
+
+
+def run_config(cfg, repo_root, template, kernel_dst, timeout):
+    """
+    将 (U, TILE_WIDTH, BLOCK_SIZE) 填入模板，编译并计时运行。
+    返回 (elapsed_s, status, error_note)。
+    """
+    # 用 Python format 把占位符替换为实际数字，生成合法 CUDA 文件
+    with open(kernel_dst, "w") as f:
+        f.write(template.format(**cfg))
+
+    subprocess.run(["make", "clean"], cwd=repo_root, capture_output=True)
+    build = subprocess.run(
+        ["make", "test_gpt2_kernels"],
+        cwd=repo_root, capture_output=True, text=True, timeout=timeout
+    )
+    if build.returncode != 0:
+        return None, "compile_error", build.stderr[-300:]
+
+    t0 = time.perf_counter()
+    run = subprocess.run(
+        ["./test_gpt2_kernels"],
+        cwd=repo_root, capture_output=True, text=True, timeout=timeout
+    )
+    elapsed = time.perf_counter() - t0
+
+    if run.returncode != 0:
+        return elapsed, "runtime_error", run.stderr[-200:]
+
+    status = "ok" if "All kernel tests done" in run.stdout else "wrong_answer"
+    return elapsed, status, ""
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Sweep matmul tile configurations")
+    parser.add_argument("--out", default="kernels_op_7/sweep_results.csv")
+    parser.add_argument("--timeout", type=int, default=120)
+    args = parser.parse_args()
+
+    script_dir    = os.path.dirname(os.path.abspath(__file__))
+    repo_root     = os.path.abspath(os.path.join(script_dir, ".."))
+    # 模板文件：kernels_op_7/matmul.cuh（含 {U}, {TILE_WIDTH}, {BLOCK_SIZE} 占位符）
+    template_path = os.path.join(repo_root, "kernels_op_7", "matmul.cuh")
+    kernel_dst    = os.path.join(repo_root, "kernels", "matmul.cuh")
+    kernel_bak    = kernel_dst + ".sweep_bak"
+    out_csv       = os.path.join(repo_root, args.out)
+
+    with open(template_path) as f:
+        template = f.read()
+
+    # 备份原始 kernels/matmul.cuh，扫描结束后恢复（finally 保证）
+    shutil.copy2(kernel_dst, kernel_bak)
+
+    # 生成所有有效配置（BLOCK_SIZE 由 U×TILE_WIDTH 派生，不单独搜索）
+    configs = [
+        {"U": u, "TILE_WIDTH": tw, "BLOCK_SIZE": u * tw}
+        for u, tw in itertools.product(U_VALS, TILE_WIDTH_VALS)
+        if is_valid(u, tw)
+    ]
+    print(f"Valid configurations to test: {len(configs)}", flush=True)
+
+    rows = []
+    try:
+        for i, cfg in enumerate(configs):
+            label = "U={U} TILE_WIDTH={TILE_WIDTH} BLOCK_SIZE={BLOCK_SIZE}".format(**cfg)
+            print(f"[{i+1}/{len(configs)}] {label} ...", end=" ", flush=True)
+
+            try:
+                elapsed, status, err = run_config(
+                    cfg, repo_root, template, kernel_dst, args.timeout
+                )
+            except subprocess.TimeoutExpired:
+                elapsed, status, err = None, "timeout", ""
+            except Exception as e:
+                elapsed, status, err = None, "exception", str(e)
+
+            smem = (cfg["BLOCK_SIZE"] * cfg["TILE_WIDTH"] + cfg["TILE_WIDTH"] * cfg["U"]) * FLOAT_BYTES
+            rows.append({
+                **cfg,
+                "smem_bytes": smem,
+                "elapsed_s":  f"{elapsed:.4f}" if elapsed is not None else "",
+                "status":     status,
+                "note":       err,
+            })
+            print(f"{status}  {elapsed:.3f}s" if elapsed is not None else status, flush=True)
+
+    finally:
+        # 无论是否出错，都恢复原始文件
+        shutil.copy2(kernel_bak, kernel_dst)
+        os.remove(kernel_bak)
+        print("\nOriginal matmul.cuh restored.")
+
+    os.makedirs(os.path.dirname(out_csv), exist_ok=True)
+    fieldnames = ["U", "TILE_WIDTH", "BLOCK_SIZE", "smem_bytes", "elapsed_s", "status", "note"]
+    with open(out_csv, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fieldnames)
+        w.writeheader()
+        w.writerows(rows)
+
+    ok = [r for r in rows if r["status"] == "ok"]
+    if ok:
+        best = min(ok, key=lambda r: float(r["elapsed_s"]))
+        print(
+            f"\nBest: U={best['U']} TILE_WIDTH={best['TILE_WIDTH']} BLOCK_SIZE={best['BLOCK_SIZE']} "
+            f"-> {best['elapsed_s']}s "
+            f"({best['smem_bytes']} bytes smem)"
+        )
+    print(f"Results: {out_csv}")
+
+
+if __name__ == "__main__":
+    main()

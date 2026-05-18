@@ -48,6 +48,11 @@ verify_kv_cache: verify_kv_cache.cu $(KERNELS)
 	$(NVCC) $(CFLAGS) $(CUBLAS_INCLUDES) $(CUTLASS_INCLUDES) -c verify_kv_cache.cu -o verify_kv_cache.o
 	$(NVCC) $(CFLAGS) -o verify_kv_cache verify_kv_cache.o $(CUBLAS_LIBS)
 
+.competition_metrics: competition_metrics
+competition_metrics: competition.cu $(KERNELS)
+	$(NVCC) $(CFLAGS) $(CUBLAS_INCLUDES) $(CUTLASS_INCLUDES) -c competition.cu -o competition.o
+	$(NVCC) $(CFLAGS) -o competition_metrics competition.o $(CUBLAS_LIBS)
+
 # Clean target
 clean:
 	rm -f *.o output_verification_rand test_gpt2 model_output next_token_generation local_attn_verify verify_kv_cache

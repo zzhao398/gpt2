@@ -1,0 +1,1216 @@
+next_token_gen - INPUT TEXT:
+The meaning of life is
+
+GENERATED TEXT:
+ a long way from being clear.
+
+The social and political context in which a person lives does not change over time. It is only when the individual becomes aware of the world, as a person, that the world is moved.
+
+The
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+The meaning of life is
+
+GENERATED TEXT:
+ to be created in the first place. Here's what I mean:
+
+Life starts when you're born.
+
+Life starts when you're born. Things are going to be different.
+
+Things are going to be different. Things are
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+Human study Computer Science for
+
+GENERATED TEXT:
+ Business and Entrepreneurship, was sponsored by the University of California, Berkeley, and the University of California System of Higher Education.
+
+B.D. is a Program in Materiel and Research in Mathematics and Computer Science at the University of
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+the meaning of life is 
+
+GENERATED TEXT:
+ to embrace life as it exists and to live it in accordance with the will of God, with God's grace and from the mercy of God's grace.  This is  something that Oliver Cowdery is teaching to us from the
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+the meaning of life is 
+
+GENERATED TEXT:
+ to find a place of comfort and peace, and a means of channeling away all sin and the sins of others. This is why I have been patient and patient, and wherever I can find the quality of prayer .
+Our Lord Jesus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+Course Assistant A: CUDA or compute unified device architecture is super cool. With all of the AI hype, taking ECE 408 will be great for your understanding of how these architectures are possible. Whether you have a CS or EE background, I'm sure you can find applications of your learning to this course. Student:
+
+GENERATED TEXT:
+ Bruce Catlin, Ph.D.
+
+Computer Science Technician A: Explore the breadth of the subject area in Computer Science. You will find the best and brightest computer science students in the University of California at Santa Cruz , and in the world of
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ "We're not here," she murmured.
+
+Her second thoughts were at the same time uncertain. Her thoughts were naked, coarse, and unfocused. She had decided that she would stop looking.
+
+~
+
+The next morning,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+the meaning of life is 
+
+GENERATED TEXT:
+ to be at peace with the world and to live with the world."
+In other words, we need to do everything we can to meet our own need to be at peace with the world and to live with the world. We need to be open with ourselves and to express our own needs and would like to do so in a way that allows us to be more open with ourselves. Because that's what we need.
+In the image above, we find an image of a picture of a
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+Course Assistant A: CUDA or compute unified device architecture is super cool. With all of the AI hype, taking ECE 408 will be great for your understanding of how these architectures are possible. Whether you have a CS or EE background, I'm sure you can find applications of your learning to this course. Student:
+
+GENERATED TEXT:
+ Courses are limited to a couple of hours for some courses. Please find another course for yourself.
+
+7.13.10 The new A/B/C interconnectors are great! I have always been fascinated with interconnecting electrical devices and their connection between cells and wires. Lectures will focus on this.
+
+7.13.11 I have been using a fairly basic semiconductor research approach for years and have been using it in numerous projects and projects. There are a
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The city's figure stopped in its tracks, and she could see it beginning to move. She bent her head to the side, lowering the dust to a trickle. The city's shadow appeared at the back of the little house, its door glistening with the faint glow of the sun.
+
+She was right. The city had awakened.
+
+She swam, her legs wet with sweat.
+
+When she reached the back of the house, she saw the same shadow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+"It's OK," her guide said. "We're not going to bring you here for a show. It's not like this is a big deal. We're just going to be here for a long time."
+
+"Oh, yeah. That's right. It's not like this is going to be a big deal. It's not like it's going to be nice. The scene is going to be mine. It's going to be beautiful. It's just that I've been here for so long."
+
+She looked down at the road and put her hand on the asphalt. It was quieter than she had expected. It didn't sound like the sort of noise she'd heard in those nights, for that matter. It was the kind no one would turn to to see her, for any reason.
+
+She walked to the car, and it was here that she recognized her last name. It was a tall yellow-haired man with a black suit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+"I can't tell you how many times I've died, Princess," the train commanded with a dull roar.
+
+"Won't you know how many times I've died?" she asked. The sound echoed across the city.
+
+"I can't tell you how many times I've died. I have no idea how many times I've died," the train told her, before turning and heading off into the distance. They were not close enough to smell her, but they were far enough away that they were not too far away to hear her touch the ground. They were close enough to make her think of the things that would bring her back to her senses in the future.
+
+"It's not that I am not here, Princess," she heard it say as she walked past.
+
+"I am here," she told the train. "I am here to tell you about the future, to tell you of your future." She reached out and touched the ground, a few feet below the river, hissing into the air. It seemed to exceed her strength to move it.
+
+"You must not be so stupid as to think that I am here to tell you about the future," she said, smiling. "It would be foolish to think that you would, if only for the sake of going to the future."
+
+"I'm here to tell you about the future to see you grow up, Princess," the train commanded, and she pivoted around to look at her. "The future will be as good as I ever imagined it would be. I'll never forget it."
+
+She was about to say anything good about it, when the train turned a corner. She wrenched her head around to make sure it was right, but it was too late. She lost it.
+
+"What is the future?" she asked, her voice trembling.
+
+"It is not the future," the train said. "It is only the future."
+
+"I am sorry, Princess," the woman said, her voice flat. "I cannot bear to see you lose your life. It is not that you can't help it, it is that you must try to do something about it."
+
+"Hmph," she said. "I will not help you. You'll be your own worst enemy."
+
+"You can't help it, Princess. You have no choice, Princess."
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+the meaning of life is 
+
+GENERATED TEXT:
+ to be the one in which life is living.  It is the one in which the universe is being created in the image of God.  
+Granted, the story isn't all about God.  It's not all about
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+the meaning of life is 
+
+GENERATED TEXT:
+ being in the right place at the right time," he said.
+The "chaos of the world," he said, was "moving in a pattern of chaos."
+At least three people have died in the attack, including a 32-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+the meaning of life is 
+
+GENERATED TEXT:
+vernacular, which is why it's hard to say how many people actually follow it.
+
+What I do know is that most of the time I do keep track of how long it takes to get to the point of even knowing I am at
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+the meaning of life is 
+
+GENERATED TEXT:
+ to live in a world of change". 
+The past two decades have seen the rise of the Occupy movement. The movement has taken the form of protests, street actions and armed occupations. The movement has taken over the national parks and confiscated property
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+Course Assistant A: CUDA or compute unified device architecture is super cool. With all of the AI hype, taking ECE 408 will be great for your understanding of how these architectures are possible. Whether you have a CS or EE background, I'm sure you can find applications of your learning to this course. Student:
+
+GENERATED TEXT:
+ Analyst/C+
+
+Extended Term Exam: EEE 408 offers a full examination of all topics in this course. The exam is designed to give you a unique perspective on the world around you and your skills. The exam is divided into four
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+Course Assistant A: CUDA or compute unified device architecture is super cool. With all of the AI hype, taking ECE 408 will be great for your understanding of how these architectures are possible. Whether you have a CS or EE background, I'm sure you can find applications of your learning to this course. Student:
+
+GENERATED TEXT:
+ Alan Akhamasi
+
+Finalist: Richard J. Daniels
+
+This course is designed by Richard J. Daniels, a master of computer science and an instructor of computing architecture. He is a computer scientist with a bachelor's degree in mathematics.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+Course Assistant A: CUDA or compute unified device architecture is super cool. With all of the AI hype, taking ECE 408 will be great for your understanding of how these architectures are possible. Whether you have a CS or EE background, I'm sure you can find applications of your learning to this course. Student:
+
+GENERATED TEXT:
+ 8
+
+Computer Science A: Computer Science is a good course to start with. It will learn the basics of computer science and how to apply to new topics. It will also provide you with more advanced concepts, such as the Mathematica language
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+Course Assistant A: CUDA or compute unified device architecture is super cool. With all of the AI hype, taking ECE 408 will be great for your understanding of how these architectures are possible. Whether you have a CS or EE background, I'm sure you can find applications of your learning to this course. Student:
+
+GENERATED TEXT:
+ Mary Lou Fawnar 12, Cal State, Los Angeles, CA.
+
+SBA: Computer Science
+
+A: Computer Science (US) is the most prestigious field at Stanford. A major in Computer Science is about to become a major
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ And then, suddenly, something happened: The train came at her and tumbled down the hill. And then she had to scramble for cover. Her hands lay on the ground, clutching the strange toenails that sat on the ground. And the
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+Chirped by the sound of her footsteps, Chirped by the sound of her footsteps, the city crumpled to the ground. The black-and-gold skyline rose ominously in the distance, the city's shadow as
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+Anderson paused. "Do you really think I'm dreaming?" she asked softly, "not to the extent that I do now."
+
+"I have dreams, Anderson," she replied, "but they are more like a dream. They
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+But she'd never heard it, or if she'd listened too carefully, the city might whisper back. She was still a young girl. She walked through the city, silently, and half an hour later, she began to feel something strange
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+People were walking by. She turned and saw a man approaching, walking past them with a hasty walk, his face contorted in a smile. He looked at her with a slightly wan smile, his eyes wide with a smirk. "H-Hey, I-I'm John, listen to me," he said. "There's a train's gonna be going by on the way. It's going to be a little long, but we're going to make it!"
+
+The man smiled again. "I'm John, I'm John, I'm John…just listen, there's one last thing you need to know, and it's to you."
+
+"John?"
+
+"H-Hello, John." The man's face was a mixture of confusion and frustration. "What's up?"
+
+"I got the train back. It's gonna take a while."
+
+"Relax," he said. "We're gonna live
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+"If that wasn't me, I shouldn't be here," she murmured. Her eyes widened. "The city's recent events remind me that the human race is still young, weak, and isolated from the rest of the galaxy."
+
+"I'm not sure that's the case," the man said, not caring to answer. His voice was strangely muffled. "But I will tell you something, Wolf: I don't want to tell you anything. I don't want to tell you anything, and I don't want you to know anything."
+
+"I don't want you to know anything," she admitted. "I want you to know that this is my place."
+
+"I don't want you to know anything," he said. "But I do want you to know that this is where I have done my best to understand what it is that I'm doing here. I will tell you what I have found, and what I have done
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+I have no idea how she remembers this time.
+
+"Yeah," she said, "it was pretty loud."
+
+A blink.
+
+"Yeah, what the hell were you thinking?"
+
+"I don't remember. I couldn't remember."
+
+"Maybe it was just… weird."
+
+"I just didn't have any idea."
+
+"I guess it was just… weird. I'm feeling like… I'm not sure what it was."
+
+"I'm not sure what it was."
+
+"I guess it was just… weird. I'm not sure what it was."
+
+She was sure.
+
+"I guess it was just… weird. I'm not sure what it was."
+
+She didn't have to say anything.
+
+The sound of the train hummed, but the silence wasn't really like that. The train slowed, and the driver waved her to one side, walking softly
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ She didn't need to, because the sound was coming from behind her. A small silence was watching over her, but she could hear it, too. She sighed, taking in the sound of the bell ringing. The city was silent, too.
+
+The silence was making her feel like she was in a dream. She didn't want to be in the city. She wanted to be somewhere else.
+
+She felt the streets around her begin to tremble, and she caught a glimpse of a dozen or so people running in and out of the city. The sound of weak footsteps. The sound of an alarm. The sound of the people squeezing each other, her heart pounding, but she felt some relief. It was the first time she had seen a woman in years. She almost didn't know how to describe it. She saw a woman watch over her. She saw a woman sweat as she waited for the bus. She saw a man with dark hair, with a beard.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The only thing she could think about was the park's image. In the distance, the scenery faded into the distance. The city's vision faded into the distance, its thoughts fading into the distance, its voices fading into the distance, its thoughts fading into the distance. She could see the streetlight, the trees, the grasses, the scene where the train passed through the canyon, the way there were some inside the park, and she was certain it was a picture she couldn't see. She heard a voice, her heart pounding in her chest, her throat closing, her mind racing.
+
+"Excuse me?" she called out, once she knew her name.
+
+The voice was the same. She heard the voice again.
+
+"Excuse me?" she asked.
+
+The sound echoed through the park, coming from far away. She felt her heart race, her heart beat faster, her pulse accelerating. For a moment, she thought, there
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ Then, she snapped to mind her own business.
+
+The next morning, a man arrived at her doorstep. He was dressed in a white mohair, a tight black sweater and jeans that covered his shoulders and haphazardly rolled over his head as he entered. He was tall, in his mid-20s, with tipsy blue hair and a frizzy moustache that brought a slight tickle in his eyes. He was wearing a black coat, which was a bit of a shame because the winter was here, and he looked like an old man.
+
+"Hello," he greeted, his voice soft and unearthly. "Hello."
+
+"I'm Bill," she said. "I'm here for you."
+
+"I'm Bill," he said, and then his hand rested on the doorframe. "I'm renting a house for you. I'm here to bring you food. I'm here to sit you down. I'm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ If she waited long enough, she might hear the earth tremble.
+
+But then she came to a stop. There was no place to go.
+
+She stood where she stood. Her legs were limp and her feet were clumsy. She had once been a hunter in the run-up to the city's peak, walking with full force, her hands in line with her hips. But she had never been pregnant. Frankly, she had no idea what she was doing.
+
+She sat in the shade of the tree, still dressed in school clothes. She was wearing an orange-and-white swimsuit, her hair pulled back to her shoulders. She wore a dark blue shirt and a black jacket. Her nose was a little red. She wore a light yellow tie. Her hair was long and been in white from the sun. Her eyes were bluish, her lips small. She wore a large, black cloth hat with a looped collar around her neck. Her
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She listened with her first butler and smiled. "You know, you know, if you had asked me that question, I would have said no. But I won't be able to answer it, because the city you live in is more than I can handle you."
+
+"It's impossible to tell who you are," he said softly. "The only way to know it is to know who you are."
+
+"Y-yeah. So we're both here. You know, I can't do anything about it. I don't know if it's because I want to understand or because I'm too busy with my job to do anything. It's like, and here we are, in our own little bubble, just looking at each other, without the air conditioning in our house. It's like, it's like, you don't care about anything. You know what's up, you know what you're going to have to do?"
+
+"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She'd seen it all before, in her childhood, when she'd watched a group of people, who'd gathered together to do valiant duty for the gods of the sky. It was impossible to ignore them, just as the people whose lives she'd recognized them from had become their guides. Any time she'd walked alone, she'd run into them, hoping they would accept her. But they weren't. They weren't. If she'd walked alone, she'd find what she'd had been searching for, and she'd fall into the dark, unable to see or feel anything like her own.
+
+She'd stumbled upon a strange, yet strangely comforting place, a place in which she could only be herself. She'd stumbled upon a place where the gods were concerned, where she could experience the beauty of nature. There were no gods, only the Gods. The gods were there to protect her, to protect her from her own problems, to take care of her. There
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+When she got up, she was standing in the plain, almost invisible, of the corridor where a tank stood and her mother, who had been in the waiting room, had gone. The tank was purple, with a silver-gray paint job, and the woman sat across the desk from her. When she looked at her again, her gaze settled on the older woman's hair and the small, onyx-gray eyes of her mother. "Come on in, baby," the woman said.
+
+She turned to face the tank. "I had a mission," she said, her voice warm. "I need you to find a girl who can help us stay safe here."
+
+"I didn't want to think that way," the woman said, her voice double-loud. "I wanted it to be as easy as possible. It doesn't matter who you are, what you have been through. It's all your own. You've been through everything.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+"The train's finally out," she said, pulling the reins back on the bridge.
+
+At her side, the soldiers of Nurgle, she'd never heard of war; it was rarely seen from the war-canceled war-shows in the streets of the city. They were so protective that even the most seriously wounded could only barely walk or walk through the open road. The soldiers had a sometimes-fractured sense of humor and thought that the strings of irony were about to be roused, and they were making her feel good.
+
+She'd spent the last time in her old village watching the soldiers work through the night, the pain and loneliness of the night. It was a harsh world out there, and she couldn't help but look at it with concern, as if she'd somehow seen something different.
+
+The sound of the train was like the sound of a baby's cry, a primal scream of maddening emptiness in the
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ As she walked through the crowds, she heard the noise of two small children in the street. She tried to imagine what would happen if one of them were found. She felt a sense of déjà vu.
+
+Somehow, she had to do what she had always done.
+
+She had to—almost.
+
+The children were gone.
+
+The shadows darkened the shadows.
+
+The noise of the trains and buses and trains and trains started to fill the air with the faintest of sounds.
+
+She wanted to be home, she wanted to be safe.
+
+She wanted to be in this house with the children, with the children, with the children, with the children—no, she'd only forced herself to cry. And the sound of her crying made her feel as if she was dying.
+
+She wanted to be alone with her children, with her children, with her children.
+
+And there they were.
+
+She
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ But then, she felt a gasp in her throat.
+
+"Oh, shit," she whispered. "Who am I?"
+
+She wondered if it was her grandmother, not her.
+
+"No," she said, and she felt herself shift. "It's me."
+
+The silence was temporary, like a ghost. The light from the train was a whisper. She could only hear it from the edge of the city.
+
+"Oh, shit," she whispered again. "I'm afraid my grandmother died. I'm afraid of this place."
+
+She fought the urge to turn to the sleeping bird and kiss her.
+
+But as she did, she felt herself tumble into the girl's embrace. Her hands were trembling. She sputtered in pain, but she didn't feel a pain. She felt the sensation of her body shivering beneath her. It was like a weight had taken over her. Her body was shaking, but it was still really
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ And yet, for her, it wasn't.
+
+She'd been far too busy wandering the city, off and on, just wondering what else she might find. She'd noticed a strange pattern in the way she had been watching. "What's going on?" she asked.
+
+I could see her, too. I could see the shapes of shadows and shadows that didn't fill her horizon. I could see the angels, even, running down by the gates. I could see the people, even, that she had moved through. I could see the people. I could see the people, even, that she had moved through. I could see the people, even, that she had moved through.
+
+I could see her, too. I could see the shadows, even, that were covered her horizon. I could see the people, even, that she had moved through. She was gone. Her eyes were unfocused, like the light of a candle in a candlelit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+It wasn't.
+
+"Nah, don't worry. It's just that it's so hard to get through this. We're gonna have to take some time for the rest of the day." She lowered her voice, her hands moving behind her ears, trying to focus on the familiar whisper.
+
+But it didn't work.
+
+She turned slowly over a block, the light of the train coming through the darkened streets, blue and white, shining in a part of the valley where she felt the warm glow of the sun rising.
+
+"I don't think it matters. I'm getting home. I'm a little tired, but I'm still sleeping." She looked up at the ceiling, her eyes locked on the floor, her eyes fixed on the world around her. She started to walk again, her eyes closed, her heart beating, but she didn't know what to say.
+
+"How are you?"
+
+"I'm fine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The train came to a stop. It was too late to stop it. A train was just ahead, in front of her, and she could hear the driver.
+
+"Fuh-huh-huh, I'm not coming back for another second," he said, his voice trembling. He turned toward her. She stared at him, confused. He had asked her if she wanted to go back to the station, but she was too tired to think for a moment about it.
+
+"I'm not coming back for another day," she said. "I'm just here to see you this morning, and I won't be coming back for another," he said, his voice growing bolder every time she took a step back. He was a strong, articulate man, an unshakeable man. He knew what it was to be a man, and he was sure he had the right to make it happen. She reached over and hugged him, and almost
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ She pondered the thought for a moment, then looked back at the lights.
+
+In the dark, the snow had dried and the darkening surface had been washed away. Opposite the water, a distant voice spoke, and she recognized it as the voice of the man who had been in her life.
+
+"Hey, Amie," the woman said.
+
+Astrid gave her a small smile. "I'm Amie," she said. "I'm Amie. I've been here. I've been here—I've been here for years, and I've been here for decades. I've been here the whole time, I've been here for years, and I've been here for years. I've been here all these times. This place is full of guns, and there's a lot of guns. And this place is full of guns that kill people, and there's a lot of guns that kill people that kill people. And all the
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ A few minutes later, a familiar voice came out. She felt the hand on her shoulder, firmly holding the other end of her cup. She made her way through the city, her eyes scanning the valley looking for signs of life.
+
+She reached for the door, and it opened. She stopped, and her eyes widened. The thoughts of the next couple of hours were something she'd never experienced before. But they were still there—a light in her mind.
+
+She didn't even blink. The city was gone.
+
+She walked into the front door, where a man stood on a porch. He looked just like her. He was tall, thin, with an extra inch on the outside, and a turquoise eye. He looked like a very handsome man, but his features were almost too small for his long, thin hands. He wore a black shirt with red tarnishing stains on the front. The body of the man was covered in a long, band
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ She'd never realized that before.
+
+She turned to face the Doctor, who was walking like a maniac. "Excuse me, Doctor," he said. "The Wheel of Time is no longer alive." The Doctor turned to her. "What do you want me to say, Doctor?"
+
+"You're going to die soon," she said. "But I don't want anything to happen to you. I don't want you to be the one to die. I'm going to stay here for a while."
+
+"You didn't kill me," his voice sounded, as if he'd shouted into the distance, "I killed the Doctor."
+
+"You were right," she said, "the Doctor wasn't killed. He was gone. He was gone, no one knew where he was. He was gone. There is no way I can ever return to him."
+
+"If you were to die," the Doctor said, "you would be dead
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+None of the city's residents seemed to know how to respond to her, and they all seemed to be making too much noise to hear her. "You'd better come up one of those abandoned offices," said a man, his hair in a more classic morgue of gray, his eyes darkened by a faded green.
+
+She looked up from her map and saw the man, one of the few non-female residents in the city. He was a tall, white man, with a black beard and a drawn-out jaunty smile. He was standing in a dingy brick building, twenty-four feet away from her. She had assumed he was a sorter, but he was wearing a red plaid shirt and a dark, black brown sweatpants, and he had his hands up to his ears. The man seemed to be in good spirits, but had a sharp, soft voice. He spoke in a low voice, and she leaned forward to listen. "
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ She wondered how many people had died or died in the past year, how many people could have been born in the past year, had she seen that many. The sound of the train slowed, and she wondered if the silence would be as short as she had expected.
+
+The train was quiet. It was as if it were a hotel. The walls were clear and it was as if people had been about to walk into it. Then the sound of objects coming down the tunnel made her burst out in delight. "I'm here," she said to herself. The city would be there. She considered this a dream and wished it were real. She dashed back to her car and turned back to the lookout, wondering if a crate might be found. "Time to get out," she said.
+
+Her eyes filled with tears, so much so that she looked down at the ceiling. The whole place was quiet. There was no sound except the fresh sound of the train. She stared
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ A few minutes later, she saw the train pass by again, this time in a different direction. She'd never seen her own conscious body before. And then the train stopped, one of its tracks thrusting up to the other, cut off by the sound. "Aren't you scared?" she asked. "I'm scared," it said. "I don't know. I think I'm going to die."
+
+Andrew was twenty-seven years old, and his parents were homeless. He and his brother lived in the secluded meadow on the outskirts of the city, and he was mumbling to himself as if he'd just heard a thunderstorm. After his father died, Andrew's father stepped onto the porch in a strange gray suit, and Andrew sat on the patio. "That's a nice place," he said. "So I've been here a long time. I'm sure you've heard of the shack. No one's sure what it is, but a
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ Not at all.
+
+She followed the train to a small clearing on the outskirts of the city. The rail car's headlights were low, but she could hear the sound of the engines. The sound of the engines roaring. It was like the engines were coming to a halt.
+
+"As soon as the train leaves, we'll go back to the station," she told herself.
+
+She could hear the engine roar, but she could not see the surrounding city. She was still as fragile as she was been for a long time, but she could not walk. The only thing she could do was walk. She walked for a short while, but then she lost it. She had lost hope.
+
+The train was refueling at a station, but the station was getting a lot worse. The train was already slowing down, but there was still time to run. A few minutes later, the locomotive had made it to the station. The station was still busy,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+***
+
+The sound of the train was so distant, she could no longer hear any of the sounds of the train. The train seemed to be in motion, a huge, stone-faced man walking from one side of the canyon to the other. He seemed to glide through the dense wood, a single, graceful stride, and his eyes were closed.
+
+The man's face was flushed red, and his eyes glowed with a frightening kind of blue, then glowed again, then glowed again. The man wore a thin, serene grin, a jean jacket with a black stripe in the middle, and he wore a beard of chic, clean colors. In the middle of his smoky face, a little child's voice whispered, "Rose, you need a nap. You need to stay here. You need to sleep."
+
+Something went wrong.
+
+Rose was struggling. As if she hadn't slept.
+
+The man's face was
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The car pulled up to her destination; her fingers found the gas tank. She watched it slowly descend into the waiting area in the back, its floor barely wider than the rest of the car. The green and silver light would fill the entire parking lot. The train sped into the parking lot, and then she felt a flash of light. "I'm gonna die," she thought. "How many times is it going to rain? How many times are we gonna have to wait until the train sinks?"
+
+"So now you're dead?"
+
+"Only in the tunnel," she thought. "I can't say I'm optimistic. To me, the tunnel is like a water molecule, and I don't like that."
+
+"No, it's not," the train laughed. "It's not like it's alive. It just happens. This is a long time ago. The tunnel has been around for so long. The time is here. The tunnel has
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ On the way home, she'd heard echoes at the back of a car, a man sighing in frustration.
+
+Her mind didn't seem to focus on the train at all, instead thinking of what had happened to the kid's mom. She wouldn't let her mind wander back to the family, but she felt that, too.
+
+She walked to the car and went back to her bed, the sound of the car still ringing in her mind.
+
+She woke up feeling a sticky sensation. Her hands were wet.
+
+She stared at the reflection in the mirror, feeling the way it would be like to know that the color was how she had imagined her own color.
+
+The night was dark, and she had been standing on top of a rock.
+
+But she didn't care, because the truth was that there was no possible way she could see her face.
+
+She turned to her closest friend in time; he took her near the doorway
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+Clarke turned back to the car behind her, and her heart raced. In his eyes, she was a stranger to her. He could be the only one she'd ever met, and a stranger to her. He could be her second. He could be the only one who knew her.
+
+She wondered, for a moment, if he was still there.
+
+"Hello, girl."
+
+"Hello, girl."
+
+"Hello, girl."
+
+"Hello, girl."
+
+Clarke fell silent, thoughts swirling in her head. She'd been feeling vulnerable too much, and she knew that was why she'd been so thoughtful about him. The world was falling apart, but her heart still hurt.
+
+This was something new.
+
+It meant nothing. The world was changing. But she couldn't say that. She couldn't.
+
+She didn't have the strength to go any further than her office. She just couldn't
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+More than any other moment in her life, it was one of the few moments in her life that she could look around her—the streets of this town, the walls of this city, the warm raindrops of this valley, the subtle but palpable feeling of the sun on her face. The sound of a light. The raindrops of this valley were like the perfect oasis of her own skin, like the sun shining brightly over her. Now, it was a dream. She walked to the edge of the canyon, and in the blink of an eye, she was there; on the edge of the valley, barefoot and alone.
+
+She knelt down, wrapped in her black pajamas, and stood on a small hillside in the mountain range above. A narrow side road ran down that side. The scenery was sparse, and the hills and valleys were rough and muddled and barren, to the point where she could barely see much ground. She scanned the
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ "Maukakumeng!" she thought. "Maukakumeng! Maukakumeng! The city!" The silence was broken by the sound of her breath, drowning out the sounds that had been moving in the quiet. She couldn't believe she had ever heard it. And yet, after that moment, she had an unspeakable sense of her own being. She stopped and listened closely. Moments later, everything was silent again, and she could feel the familiar shuttle descending on her. The city. The city. She could hear it as fast as she could see it. She looked down at her partner. "Maukakumeng," she said. "I thought you were going to make it across the valley, but you didn't. We're only a few miles away. And even if you make it, we're not far from there." "We'll still have to get back," Merkakumeng said. They made
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The train passed through the city's bustling streets, its tracks trailing along the asphalt and strewn with wooden beams and metal poles that eventually connected the town to the river below. A few minutes later, a dark man walked in, wearing a black cap and a black uniform. He had a long, thin tube-like beard. He was a blue-eyed younger man in a white shirt, with orange eyes and a long, flowing ponytail that had a single, sharp ridge running through his flesh. His face was gray, his hair a thick gray, and his skin was his own. He was a warlock, and he looked to be in his mid-20s. He seemed to have a curious fascination for the city, his only family.
+
+"You run my boy's errand here?" the man asked, his voice clipped with a smirk.
+
+"No, not that one, but why?" she asked, her eyes narrowing into a bored look
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The second train took off at 8 a.m., and though the city was still fairly quiet, she could hear the radio station rumbling, barely audible when the train made it to the station. She walked to the bathroom, then gathered up her clothes, setting them on a table in front of her in case the train didn't move. She found her phone, then glanced at the map. It read: NYC.
+
+Riding the train, she tried to make sense of the cityscape. "It's not very nice here," she said. "You can't see all the cars, but you can see what is coming out of the canyon. Some of the road is too narrow."
+
+"Where do you think the train is going?" asked the man who was leading her into the canyon.
+
+"The train can't keep up. The train's going so fast about 30 minutes, and it's always going so fast, it's going so fast
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She tried to think of something, but she couldn't. If she didn't have an idea of what to do, she'd have a hard time.
+
+She took a deep breath, sighed, and waited, the moment of silence closing. The city slept, and she could hear the outlines of the city from beyond the shadows, and the shadows that she hadn't felt before.
+
+She'd been afraid.
+
+That night, a train and a train, a train, a train. It was like she'd been expecting to see it. She'd be gone.
+
+She did not know what to do.
+
+She felt her heart stop.
+
+She wondered what it was like to be lost.
+
+She would never know.
+
+A train stopped in front of her.
+
+Something was wrong, and she was alone.
+
+She was alone, alone with no one she could talk to.
+
+She kept walking, but
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The glow of the lantern had the same effect on her. She could feel the heat of the sun setting upon her whole body, drenching her body with radiant heat.
+
+The sun was bright enough that she could feel the warmth spreading across her body. She could feel the movement of her body slowly radiating warmth, but it wasn't as gentle as the heat of the sun. She'd never felt so warm before. The warmth of the sunlight overwhelmed her with its heat, but she could feel it under her skin. The warmth of the sun, too, felt like it was melting her skin. She felt warm, but she didn't feel like she had any skin.
+
+The sun was distant from her, too. It was far more distant than she'd ever seen. There was no sun, and the distance didn't matter. The sun was far away from her, too.
+
+She felt like she was floating in the middle of the bridge, lost
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ Then, out of nowhere, the sound of a train. A car. A car with headlights. She had to take a step back. She heard the car, and then the silence. Her heart sank. The train. She couldn't think of anything more exciting. The car. She was too tired to move. She could only imagine the silence. Her mind raced. She couldn't imagine anything more exciting. The only thing her mind could imagine was moving through the silence. She could only imagine moving through the silence. Up and down the valley, she could feel the train moving. She could see the train's speed, the howl of the trestle. She could hear the sounds of the small car, the whistling of the engine. She could hear the sound of the engine revving, the rumbling of the engine. She could see the light of the train's horn, the sound of all the engines of the train hitting the ground. She could hear the sound of
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+[M]e was just you, her face covered in the fuzzy white of her hair, and the light through her eyes.
+
+[A]s back she looked at the two men. The one with the sword and the one with the shield. She shivered with nervousness, a tiny smile on her face as she whispered, "Stop. I don't want to hurt you. I don't want to hurt you. I don't want to hurt you. I don't want to hurt you." She sighed and took a deep breath, and kissed the man on the forehead, the other man on the back. He nodded and held her close. The man looked down at her, eyes wide in disbelief, and his fingers curled around her neck. The man looked back at her, and wiped his hands on her face.
+
+[P]othered into the silence, Mephisto took a step back, feeling the air in her lungs. "Thank
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+But then she realized that the sounds could only be hearsay.
+
+The silence was finally broken, and she heard the sounds again—and she felt like a broken piece of glass. The wind carried her forward, and she saw the faces of the riders already on the train. She had to try again, and this time she couldn't. She heard the car honking, the pink lights slumping over the railings, the train's wheels kicking against the steady drum.
+
+The sound was too far, and she took a deep breath.
+
+It was then that she realized that the train had stopped. The roundabout was a far cry from the shrill roar it had used before. She felt her brain start to start to heal the damage, but she couldn't. She'd used it, and it was already bad. Rain was coming down, and she was pawning it off to a different creature.
+
+She reached over and stroked the back
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ But her senses were still dim; she didn't think her voice spoke for herself.
+
+She walked to the ground, felled by the earth's force of gravity. Her hands trembled involuntarily as she did so, then quivered with a faint taste of frost. To her left, a large boulder had begun to fall. She could feel the cold in its form—the surface of it smoothed against her skin—but no one was there. Instead, she could hear the girl's footstep. She might have recognized her had she known the school would be here. Instead, she was stuck by her own instincts. She warmed to the ground, and lowered her eyes to the ground, waiting for someone to come over. The girl stepped on her toes, and found that her toes were long, soft. The school was empty, and the girls hadn't started to play again. But they had been there for a few minutes, and now they were speaking.
+
+She
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She'd go on to win the heart of her lover, with a beautiful ball of steam.
+
+Some women would cry in her sleep while others would be gone.
+
+She could not help but feel that the emotion of the city was shifting. The sound of her lover's cries echoed in her ears. All she could do was keep her eyes shut and let her heart sink.
+
+She remembered her lover's cry.
+
+She could not bring herself to believe that she would be still more than a little girl.
+
+The sound of the train made her feel like she was still alive.
+
+She just couldn't believe she had let her lover go.
+
+She might never really know how she felt, how she felt, but at the same time, she couldn't fight against it. She would never truly know how she felt.
+
+She would never have left his body so suddenly, without a trace of warmth and love. She would never have
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The train went by faster than she thought it would. The sound of the train was muffled by the quiet and harsh sound of the buildings. The sound of the train echoed through the broad streets of the city, and for a moment she wondered if she could hear footsteps—or maybe she was with a strange, dark light outside. Her mind whispered, "Gotta find a way to get in the car and get my goddamn thing back. I'm not going to leave this place."
+
+She locked her eyes on the car, and the light flashed through them. A light flashed in the back of her head, and the light drew her closer to the car. The light held her in a strange place. She felt a small sensation in her chest. It was the kind of sensation that she rarely experienced in her life. She couldn't feel that. She felt it – and the feeling was like a cold, slick fluid that had no idea where to go.
+
+She
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She couldn't think of a single word to describe the feeling. She was too busy assuring herself she was not dreaming, she thought.
+
+"It's not the beginning!" the voice came from the train, but there was no sound of it. The excitement and the excitement of being there made her feel like she was in a dream.
+
+She was overwhelmed.
+
+They had gone into a dream.
+
+She walked slowly as they pulled into the city, taking refuge in the shadows of the city.
+
+The sound of the train and the noise of the cars she was walking through hit her in the stomach, breaking her and leaving her with a painful scar on her stomach.
+
+She did her best to hide her discomfort from the pain, but the numbness in her stomach still made her feel a little more like a fish. No matter how sensitive she was, she couldn't control herself, the fear still made her feel guilty.
+
+It
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+With a shaking hand, she began walking. She started on the dirt roads at the edge of the canyon, and walked as far as the eye could see. If she knocked on the door and waited a minute, she would be alone. She walked a few feet down the canyon, and at every step, the footsteps of the other hikers would follow her. Eventually she reached the most dense part of the valley, and found a small crystal with lines of ice and rock. She reached it, and the stone on the surface of the rock turned yellow. Somehow, she knew, she was right. She could feel the rocksflesh growing. Her fingers caught on the ice and spun it, and she clung to it. With a sigh, she made her way through the crowded city, and through the shelter where the lifeless body of a male was lying.
+
+The only thing she could think of that night was the sound of the sound of the screeching of the train.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She looked up at the sky. She looked up at the sky. The stars, her mind's memory of the past, were there. The stars, her mind's memory of the future. She felt a rush of something that had been inside her, surrounded by the feel of something that had never been there. It was like she'd seen something, and then paused, and then felt it, and then felt it again. She felt the same feeling in her chest as she'd felt her back in an old photograph of her grandfather, when the moment of awakening was the last time she'd seen her own back.
+
+She stood in front of a blue-and-white station wagon that was supposed to be a direct ride from where she'd come, but instead came to a stop at a strange, concrete office building on the outskirts of town. She walked down the street, trying to show her coworkers who were there, but finding that they didn't seem to be there.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She entered the temple, where a large, metal sculpture was next to her. From the outside, it looked like something she'd seen before, something that might carry her to the next temple, an imitation of a temple dedicated to the same god. It was a large, rectangular stone with a cross on a black background. The altar was in a single corner, the last place she'd seen a temple before. She sat on a large boulder in the middle of a courtyard, her head bowed in contemplation.
+
+"Hello," she heard a voice call.
+
+Her first thought was to turn around, step out of the way, and find her way to the temple, but she was too far away to do so.
+
+She had to make it. The ancient temple was quiet. She had to find the closest of the two.
+
+Five minutes later, she was on the bridge, her hands behind her back. Her legs were wide, each of them tens
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ Then, in the distance, she came to a halt.
+
+I'll be back.
+
+—
+
+A light, a light that had been far away, was beginning to shine through the glass canyon. The short, yellow shutters that lined the back of the train draped over its ramparts, and the red pipes that ran along the opening bank of the river. Ditto the white, dimly lit masonry of the old tower that had been built in the early days of the city. The only way to keep it from seeping into the city was to destroy it, to kill its inhabitants. The city was restful, nothing more.
+
+It was this same dark, dayless night that she'd first encountered. The city was gone.
+
+She turned to the right, and saw what she had come to see. The bridge on the right had once been, and the next morning the bridge had been. It could be the answer to her question.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+It wasn't that she didn't feel her heart beating. She had been certain it was—but it felt different.
+
+She stopped, the voice of the train approaching.
+
+A figure appeared behind her. A face, wearing a silverened cloak glinted in the darkness, and a shaggy black hat inspired by a dog.
+
+"Where did you come from?" he asked.
+
+"I'm from that city," she said. She took a deep breath. She knew the sound of the train, the effortless pace of its movements at first, the shallow inner workings of the station. It wasn't the sound of the train's whistle, but of the long, red, distinct footsteps of the two men. It was warm, one of those cold, metal-gray streets she remembered cheerfully. Her ears were closed. She could hear the calm, serene, gentle voice of the man she knew, and the same breath that sent
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ "You were right," she asked, moving closer, her eyes wide with the same clarity. "I thought I saw an alien."
+
+She heard the sound, then, and that was when she thought she heard her own voice. For a moment, she felt nothing but terror. For a moment, she thought she saw the same thing. That she heard the same thing as anyone else. That she felt the same thing as everyone else. That she felt the same thing as everyone else's mother.
+
+It was only the sound of the car. It stopped to do nothing in its tracks, leaving no answer.
+
+And then she felt her heart begin to beat faster.
+
+She heard a sudden clasp of hands in the air. Her eyes widened, and she could feel her vision fading.
+
+Her mind began to churn, the sound of a searing pain.
+
+She ran, taking turns to push back the pain.
+
+She ran again, stopping
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ She could hear the engines of the train stop to the sound of some dead man, in a clump of bows. She felt the first words of her own heartbeat, the noises of bodies moving slowly along the tracks.
+
+But it was not the train. It was the grass. It smelled of blood, every inch of it. It smelled like its own blood. The wind blew against the car as she stared at the grass, its green eyes trailing down her cheek.
+
+Her hand reached over to her chest, dragging her back over to the grass, where she lay on her back. The grass was wet. The dirt was the same, the same two, but the only difference was that she was not breathing. She was breathing because she was fresh. She had no other choice.
+
+She felt her heart racing as she tried to hold on to her breath.
+
+In the beginning, she thought she could be free. She could do anything she wanted. She
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She had reached a point, however, where she felt herself shifted into her own little bubble. She had become a reality, like a subliminal light, a vessel for the same dream. As the ripple of the ocean brought her back to reality, her knowledge of her own existence and the world around her became clearer. She began to see her own experience as a phantom. She knew she was not here, not in this world, but in the realm of memory. In the absence of a reality, she began to feel a connection with her own reality.
+
+There were times, she realized, when she was more than a little confused. She was there, for her own sake, in a world that was, in some ways, beyond her. She was here, for her own sake, in an outside world that was. She wasn't here, but in the midst of all of the events of the world she was experiencing. There was a place she was not,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The past few days had been a test to see if she could give her mind much more control over her life. The noise echoed out of her thoughts, made up of nightmares and thoughts of tragedy. The police, the priests, the soldiers—anything that might make her feel better. The soldiers had done that too, and she was worried that they would all die. She'd been at work chatting with the kids without any real talk.
+
+She had never been so scared.
+
+Before her eyes, the ether seemed to move on its own accord, like something floating above a greater ocean. It had picked up movement along the way, swirling around her.
+
+She wondered why it hadn't been a single thought, and wondered if it had been a sense of anticipation, or if she'd been waiting so long to hear it all.
+
+She'd been waiting a long time for her to leave her room.
+
+She didn't know what to do.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ This was not a dream, she thought, and she was being watched. The birds came into view, and she felt more like a part of the edifice than a conductor. She tried to think of a way to get there, but the train seemed to linger in a corner of her mind, and the silence she felt was still there. She wanted to touch it. Still. She tried to pull herself out of the fog, but the train kept moving and she could hear nothing.
+
+The silence was like that of a bird, and she could not know that she was in the same place as it. The train shuddered and shook, but she could not see anything. The birds were still there, black and white, and she could not tell whether the city was still alive or not. The streets seemed to slip away, but she felt more like a prisoner, like a prisoner in an endless loop of daydreams. The silence was like that of a bird, and
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ She looked down, her hands clasped around her waist. She could feel her heart beating, the bitter edge of nostalgia and longing. She pulled out a gun, and fired. The sound of the gun echoed across the town, and then it stopped. The fog filled the air like a heavy rainstorm.
+
+She focused, her mind focused. The city was here, and it was here to stay. She'd been there before. She'd been here when the city was there, and she'd see it every day.
+
+The wind blew, shifting the sky. The sky fell, and the sky fell again, silently. She found herself standing in the dark, alone, and her eyes closed. She couldn't just look at the stars, but she could get lost in their blinding light. She felt the city, and she saw its emptiness. The only thing she could see, she thought, was the leeward ship, the first to land. It was the only
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+"So, what do you think?" asked Lucien as she turned and went to step through the narrow glass door and into the crowd.
+
+"I'm glad I went through with this," she said. "But you know what? I'm not any better off than you are. I don't know what I would do if I were just left alone. I'm so tired of living in this house, and every day I'm walking around like a horrible person. I don't know what I would do if I were just left alone."
+
+"Is that so?" asked Lucien, turning to face her.
+
+"No, I don't want to."
+
+"And I'm sure you're still tired of living in this house, and I'm sure you're still worried about your future. I don't want to leave you alone. I want to find you somewhere that you can be yourself."
+
+Lucien and I exchanged
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ And then she felt an almost magical sense of revelation. She had her first vision—a flickering light in the distance, a flickering light that flashed through the night sky as she stared out into the night.
+
+The light turned on a dime, and suddenly, she could see a faint blue flame in the night sky.
+
+"Hey, Peter! My name is Peter!"
+
+"Well, I'm sorry for the confusion," she said, her voice low. "You're a little bit excited, are you?"
+
+"Yeah, really!" he said. "I was in the hotel last night, and I just had to get home from work! I didn't come home for three days, but I came home for the rest of the night. So, I'm just going to go back to work, and then I'll get home, and then I'll make my way home to my mom, and then I'll go back to work. You're right!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ "I see your... directly," she whispered gently. "And you're the one who's been thinking about me." "You're the one who's been thinking about me?" I asked, forcing a smile. "I'm the one who's been thinking about you, too. You're the one who's been thinking about me. You're the one who's been thinking about me, too." She leaned forward, ever so slightly. "I'm the one who's been thinking about me, too," she whispered, her voice so soothing. "And you're the one who's been thinking about me." The air in the cave smelled of charred wood, and the faint ticking of a box to keep it open. "I know you're certain, Mom," she whispered. "I know you're certain. I know you're certain. I know you're certain. I know you're certain. I know you're certain. I know you're certain. I know you're certain
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+It was an illusion.
+
+The twin-headed woman's gaze wandered over the shadows before her.
+
+"We're in the middle of a winter's night," she said. "She's coming out of her car. She's talking to us. We're in the middle of a winter's night. She's talking to us. I don't know what she's talking about, but she's saying something. I can't believe it. I don't know what she's talking about. She's saying something."
+
+She stood, her arms crossed. "I think she's saying something," she said, trying to understand. "I think she's saying something."
+
+She was giving a queer, wistful look at the woman in front of her, her eyes shining like silver and orange. "What are you talking about?" she whispered, mumbling in the darkness.
+
+She blinked, allowed herself to fall.
+
+"It's
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+She didn't watch much of it—or at least, not much of it.
+
+The train left the city, stopping at a riverbank, a shade of green in the middle of a lush, unblinking desert. As the train continued, a man walked through the stars, making his way to the trailhead.
+
+She turned, her eyes wide. He looked like a man who had come here to let her know he was here. He was a man who had traveled in the shadows of the city, and took her on a journey.
+
+The man in the shadows, though, was not a man who saw everything. He was a man with a smile. A boy, a man who had followed her on a trip. A man who had steered her to the last riverbank. At least, that was what she remembered him saying.
+
+The man in the shadows stopped, his voice cut over the air.
+
+"You're not
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+ "I thought you might like it when I left," she whispered, "but here's to some other time."
+
+Old man Landis was going to be the last man she would ever meet. He'd seen her—the only man she'd ever met—and she'd believed him. But his anger had got the better of him. She wanted to know what it was like to be home. "I really wanted to know how you felt when I left," she said, reaching for her lap. He was holding her against him, holding her by the hand, and she didn't want to say anything. He was holding her against her, too, and she didn't want to say anything. He was holding her against her, too, and she didn't want to say anything.
+
+"I can tell you about your mother," Landis said, "Gone before you were born. She was my first wife. I had a daughter, and she was the only
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+"No!" She cried. "No!"
+
+The train stopped, an instant later, sending her flying. She landed safely, and a massive cloud of shadows formed on the asphalt. "Wow!" she gasped, her face turning pale, her eyes wide. "I can't believe I'm back. It's so kind. I can't believe it. I'm so glad I'm back."
+
+A thousand visions flashed in her mind, a flicker of hope in her heart. She tried to calm herself down, but she didn't do it. She walked back into her sleeping quarters, her head falling to the ground, her stomach churning with fear. She lay there, her eyes searching for her body, until the city turned back to full speed, and she and her family and friends headed to the city.
+
+—
+
+The next day, she had been on a train to New York City.
+
+She could have, at any moment,
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+The train was arriving instead, and she was in a space she could feel, a space that spoke to her. In the city sky, she could see an intricate maze of sensors that tracked the way she moved. She had to get out of there. She would have to get back to the city.
+
+To make it away was an arduous task, and she could only imagine the sort of anxiety that would flow through her if she were to remain here. But she didn't know what she would do. She was frozen. The train had made a detour, and she was here.
+
+She felt like she'd been trapped. She couldn't walk.
+
+"It's okay," she said, her voice tense.
+
+The train passed her. She could hear the faint, clear sound of metal scraping against the pavement, and her heart thumped. The train had taken her. She looked back.
+
+"I'm sorry, I thought I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+next_token_gen - INPUT TEXT:
+In the quiet hours before sunrise, the city felt like a sleeping organism, its lights blinking like distant neurons. A soft fog rolled over the streets, blurring the edges of everything familiar. Somewhere, a train announced its departure with a low, resonant hum, echoing through the steel and glass canyons. The sound reminded her of possibility—the kind that exists only when the world hasn't yet woken. She walked without purpose, tracing the rhythm of her own breath, letting each step dissolve into the silence. For a moment, she imagined that if she listened closely enough, the city might whisper back.
+
+GENERATED TEXT:
+
+
+Towards the end of the journey, she could feel the world's silence. She knew that the streets would be quiet, that a moment of silence might be just as precious as another moment of silence. As long as she stayed quiet, she might have the same feeling.
+
+She walked into the clearing once more, her body a little more relaxed than before and her mood more hopeful. The surroundings were peaceful, but for a moment, she felt as if she were in a relationship with a dead person. She approached a door, and locked it softly with her hand and glanced at the ceiling.
+
+Her eyes met the small, white wall of the canyon, and her face was like a window in the softness of the forest. The light was a bright orange, and the rock was clear. She had the feeling that if she looked hard enough, the people of the city might hear her.
+
+***
+
+The voice that entered her head was a voice
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

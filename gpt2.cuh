@@ -29,6 +29,12 @@
 #include "kernels/matmul.cuh"
 #include "kernels/residual.cuh"
 
+// op_13: align tensors to 128-byte boundaries for coalesced memory access
+#define TENSOR_ALIGN_FLOATS 32
+static inline size_t align_up(size_t n, size_t align) {
+    return (n + align - 1) & ~(align - 1);
+}
+
 // ----------------------------------------------------------------------------
 // GPT-2 model definition
 
@@ -91,7 +97,7 @@ float* malloc_and_point_parameters(ParameterTensors* params, size_t* param_sizes
     // calculate the number of parameters
     size_t num_parameters = 0;
     for (size_t i = 0; i < NUM_PARAMETER_TENSORS; i++) {
-        num_parameters += param_sizes[i];
+        num_parameters += align_up(param_sizes[i], TENSOR_ALIGN_FLOATS);
     }
     // malloc all parameters all at once on the device
     float* params_memory;
@@ -109,7 +115,7 @@ float* malloc_and_point_parameters(ParameterTensors* params, size_t* param_sizes
     float* params_memory_iterator = params_memory;
     for (size_t i = 0; i < NUM_PARAMETER_TENSORS; i++) {
         *(ptrs[i]) = params_memory_iterator;
-        params_memory_iterator += param_sizes[i];
+        params_memory_iterator += align_up(param_sizes[i], TENSOR_ALIGN_FLOATS);
     }
     return params_memory;
 }
@@ -182,7 +188,7 @@ typedef struct {
 float* malloc_and_point(float** targets[], const size_t* act_sizes, int n) {
     size_t num_activations = 0;
     for (size_t i = 0; i < n; i++) {
-        num_activations += act_sizes[i];
+        num_activations += align_up(act_sizes[i], TENSOR_ALIGN_FLOATS);
     }
     float* acts_memory;
     cudaCheck(cudaMalloc((void**)&acts_memory, num_activations * sizeof(float)));
@@ -191,7 +197,7 @@ float* malloc_and_point(float** targets[], const size_t* act_sizes, int n) {
     float* acts_memory_iterator = acts_memory;
     for (size_t i = 0; i < n; i++) {
         *(targets[i]) = acts_memory_iterator;
-        acts_memory_iterator += act_sizes[i];
+        acts_memory_iterator += align_up(act_sizes[i], TENSOR_ALIGN_FLOATS);
     }
     return acts_memory;
 }
@@ -269,9 +275,21 @@ void gpt2_build_from_checkpoint(GPT2 *model, const char* checkpoint_path) {
     model->params_memory = malloc_and_point_parameters(&model->params, model->param_sizes, 1);
 
     // read in all the parameters from file and copy them to device
+    // op_13: copy each tensor individually to respect alignment padding
     float* params_memory_cpu = (float*)mallocCheck(num_parameters * sizeof(float));
     freadCheck(params_memory_cpu, sizeof(float), num_parameters, model_file);
-    cudaCheck(cudaMemcpy(model->params_memory, params_memory_cpu, num_parameters * sizeof(float), cudaMemcpyHostToDevice));
+    float** params_ptrs[] = {
+        &model->params.wte, &model->params.wpe, &model->params.ln1w, &model->params.ln1b,
+        &model->params.qkvw, &model->params.qkvb, &model->params.attprojw, &model->params.attprojb,
+        &model->params.ln2w, &model->params.ln2b, &model->params.fcw, &model->params.fcb,
+        &model->params.fcprojw, &model->params.fcprojb, &model->params.lnfw, &model->params.lnfb
+    };
+    size_t cpu_offset = 0;
+    for (size_t i = 0; i < NUM_PARAMETER_TENSORS; i++) {
+        cudaCheck(cudaMemcpy(*(params_ptrs[i]), params_memory_cpu + cpu_offset,
+                             model->param_sizes[i] * sizeof(float), cudaMemcpyHostToDevice));
+        cpu_offset += model->param_sizes[i];
+    }
     free(params_memory_cpu);
     fcloseCheck(model_file);
 

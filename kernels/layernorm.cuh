@@ -6,37 +6,52 @@
 #include <float.h>
 #include "../utils/cuda_utils.cuh"
 
-__global__ void layernorm_forward_kernel(float* out, float* mean, float* rstd, const float* inp, const float* weight,
-                                         const float* bias, int B, int T, int C) {
-    // Implement this
+// req_3: one block per token row, parallel reduction over C for mean and variance.
+__global__ void layernorm_forward_kernel(float* out, float* mean, float* rstd, const float* inp,
+                                         const float* weight, const float* bias, int B, int T, int C) {
+    int row = blockIdx.x;
+    if (row >= B * T) return;
 
-    int index = blockIdx.x * blockDim.x + threadIdx.x;
-    if (index < B * T) {
-        float sum = 0.0f;
-        for (int i = 0; i < C; i++) {
-            sum += inp[index * C + i];
-        }
-        float m = sum / C;
-        float sigma2 = 0.0f;
-        for (int i = 0; i < C; i++) {
-            sigma2 += (inp[index * C + i] - m) * (inp[index * C + i] - m);
-        }
-        float s = rsqrtf(sigma2/ C + 1e-5f);
-        for (int i = 0; i < C; i++) {
-            float n = s * (inp[index * C + i] - m);
-            out[index * C + i] = n * weight[i] + bias[i];
-        }
+    const float* x = inp + row * C;
+    int tid = threadIdx.x;
 
+    __shared__ float smem[256];
+
+    // mean
+    float sum = 0.0f;
+    for (int i = tid; i < C; i += blockDim.x)
+        sum += x[i];
+    smem[tid] = sum;
+    __syncthreads();
+    for (int s = blockDim.x / 2; s > 0; s >>= 1) {
+        if (tid < s) smem[tid] += smem[tid + s];
+        __syncthreads();
+    }
+    float m = smem[0] / C;
+
+    // variance
+    float var = 0.0f;
+    for (int i = tid; i < C; i += blockDim.x) {
+        float d = x[i] - m;
+        var += d * d;
+    }
+    smem[tid] = var;
+    __syncthreads();
+    for (int s = blockDim.x / 2; s > 0; s >>= 1) {
+        if (tid < s) smem[tid] += smem[tid + s];
+        __syncthreads();
+    }
+    float s = rsqrtf(smem[0] / C + 1e-5f);
+
+    for (int i = tid; i < C; i += blockDim.x) {
+        float n = s * (x[i] - m);
+        out[row * C + i] = n * weight[i] + bias[i];
     }
 }
 
-// Launch kernel here
 void layernorm_forward(float* out, float* mean, float* rstd, float* inp, float* weight, float* bias,
                        int B, int T, int C) {
-    // Implement this
-    const unsigned int numThreadsPerBlock = 256;
-    const unsigned int numBlocks = (B * T + numThreadsPerBlock - 1) / numThreadsPerBlock;
-    layernorm_forward_kernel<<<numBlocks, numThreadsPerBlock>>>(out, mean, rstd, inp, weight, bias, B, T, C);
+    layernorm_forward_kernel<<<B * T, 256>>>(out, mean, rstd, inp, weight, bias, B, T, C);
 }
 
 #endif // __LAYERNORM_KERNEL_CUH__

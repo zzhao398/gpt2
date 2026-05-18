@@ -22,3 +22,15 @@
 
 # error output
 *.err
+
+# local notes (not for submission)
+op_notes.md
+
+# large profiling binaries
+*.ncu-rep
+*.nsys-rep
+*.sqlite
+
+# compiled competition binary
+/competition_metrics
+/competition.o
